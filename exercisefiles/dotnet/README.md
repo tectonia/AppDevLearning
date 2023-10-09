@@ -15,13 +15,13 @@ The `dotnet` folder contains the `MinimalAPI.sln` solution, with 2 projects:
 
 To run the tests, open a terminal in the `dotnet` folder and run:
 
-``` bash
+```bash
 dotnet test
 ```
 
 To run the app, open a terminal in the `dotnet` folder and run:
 
-``` bash
+```bash
 dotnet run --project .\MinimalAPI\MinimalAPI.csproj
 ```
 
@@ -31,7 +31,7 @@ dotnet run --project .\MinimalAPI\MinimalAPI.csproj
 - Run `dotnet test`
 - If test pass you should see something like this:
 
-``` bash
+```bash
 Microsoft (R) Test Execution Command Line Tool Version 17.6.0 (x64)
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
@@ -45,27 +45,24 @@ Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration:
 
 - Inside `MinimalAPI\Program.cs` add the following endpoints:
 
-- **/DaysBetweenDates**: 
+- **/DaysBetweenDates**:
 
 Calculate days between two dates
 
 receive by query string 2 parameters date1 and date 2, and calculate the days between those two dates.
 
-- **/validatephonenumber**: 
+- **/validatephonenumber**:
 
-Receive by querystring a parameter called phoneNumber 
-validate phoneNumber with Spanish format, for example +34666777888
+Receive by querystring a parameter called phoneNumber
+validate phoneNumber with UK format, for example +44666777888
 if phoneNumber is valid return true
 
-- **/validatespanishdni**:
+- **/validateukpostcode**:
 
-Receive by querystring a parameter called dni
-calculate DNI letter
-if DNI is valid return "valid"
-if DNI is not valid return "invalid"
-
-We will create automated tests to check that the functionality is correctly implemented.
-When the development is completed, we will build a container using Docker
+Receive by querystring a parameter called postcode
+validate the UK postcode
+if the postcode is valid return "valid"
+if the postcode is not valid return "invalid"
 
 - **/returncolorcode**:
 
@@ -81,15 +78,15 @@ return the code.hex field
 
 - **/tellmeajoke**:
 
-Make a call to the joke api and return a random joke using axios
-        
+Make a call to the joke api (https://v2.jokeapi.dev/joke/Any) and return a random joke using axios
+
 - **/moviesbydirector**:
 
 (this will require to browse to https://www.omdbapi.com/apikey.aspx and request a FREE API Key)
 
 Receive by querystring a parameter called director
 
-Make a call to the movie api  and return a list of movies of that director using axios
+Make a call to the movie api and return a list of movies of that director using axios
 
 Return the full list of movies
 
@@ -127,28 +124,29 @@ Return the country and its iso code
 
 - Build the image and run the app on port 8080
 
-``` powershell
+```powershell
 docker build -t dotnetapp .
 docker run -d -p 8080:80 --name dotnetapp dotnetapp
 ```
 
-# GitHub Copilot Labs exercises
+# GitHub Copilot Chat exercises
 
-The following tasks can be performed using the Copilot labs add-in, currently PREVIEW functionality, expect some bugs.
+The following tasks can be performed using the Copilot Cah add-in, currently this is in BETA so you may find some bugs.
 
-Make sure to install the GitHub Copilot labs extension: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-labs
+Make sure to install the GitHub Copilot Chat extension: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat
+(If working in a codespace this will have been added automatically for you via configuration)
 
 Open GitHub Copilot extension to see all the available functionality.
 
 - **Explain**
 
-Select the line that has the regex in the validatePhoneNumber method, in EXPLAIN section click "Ask Copilot". You will see an explanation detailing what does each different notations in the regular expression.
+Select the line that has the regex in the validatePhoneNumber method, in the chat ask Copilot chat to explain this code for you (note you can type /explain to shorten this ask).
 
 - **Language translation**
 
-Select some source code:
+Select some source code such as your randomeuropeancountry:
 
-``` csharp
+```csharp
 var countries = new[] { "Spain", "France", "Germany", "Italy", "Portugal", "Sweden", "Norway", "Denmark", "Finland", "Iceland", "Ireland", "United Kingdom", "Greece", "Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic", "Estonia", "Hungary", "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands", "Poland", "Romania", "Slovakia", "Slovenia" };
     return countries[new Random().Next(0, countries.Length)];
 ```
@@ -157,14 +155,13 @@ Then use the "LANGUAGE TRANSLATION" section select python and click "Ask Copilot
 
 - **Readable**
 
-Select the content of MakeZipFile
+Select the content of randomeuropeancountry
 
-In the BRUSHES section, click in "Readable", see how comments are added and also variables that have short names are renamed to a more understandable name.
+In the chat ask Copilot to make your code more readable.
 
+-- **Add Unit Tests**
 
--- **Add Types**
-
-TBD
+You probably have been creating Unit Tests for all your code so far, so if you have please remove tests for one of your implementations and select the code and ask Copilot Chat to add unit tests (note you can type /tests to shorten this ask).
 
 -- **Fix Bug**
 
@@ -172,51 +169,24 @@ In the exercise, there should be no bugs, since most of the code will be done by
 
 Force some errors like:
 
-``` csharp	
+```csharp
 return countries[countries.Length + 1];
 ```
 
-Then select the "BRUSHES" section press the "Fix Bug" button.
+Then select the code method and ask copilot chat to fix the bugs it may find (note you can type /fix to shorten this ask).
 
--- **Debug**
+-- **Document Code**
 
-Select some lines of text that contains variables, like:
+Select some lines of code
 
-``` chsarp
-app.MapGet("/listfiles", () =>
-{
-    var files = Directory.GetFileSystemEntries(Directory.GetCurrentDirectory());
-    return JsonSerializer.Serialize(files);
-});
-```
+In the chat ask Copilot to add a comment to explain each line
 
-THen use the "BRUSHES" section and press the "Debug" button.
+# Explore Copilot and Copilot Chat
 
--- **Clean**
-
-TBD
-
--- **List steps**
-
-Select some lines of code that do not have comments and in the "BRUSHES" section press the "List steps" button.
-
-
--- **Make robust**
-
-Select some code where you would like to add validation and using the "BRUSHES" section press the "Make robust" button, you will see that additional validation is added.
-
--- **Chunk**
-
-TBD
-
--- **Document**
-
-Select some line (e.g. a method or the beggining of the if clause)
-
-    `app.MapGet("/parseurl", (string url) =>`
-
-Then use the "BRUSHES" section and press the "Document" button, you will see that comments explaining what the code does are added before the line.
-
--- **Test Generation**
-
-TBD
+Use the skills you have learned from Copilot and Copilot Chat to start some new code of your choosing and add to this code
+Examples may be:
+- A new website based on a new framework
+- Create an application in a language you are unfamiliar with (note the codespace is only configured for node, java and dotnet)
+- Create a new API
+- Do some Infrastructure-as-code to create some cloud resources using Terraform, ARM or Bicep.
+- Use your imagination, have some fun!
