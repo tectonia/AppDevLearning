@@ -138,11 +138,11 @@ Make sure to install the GitHub Copilot Chat extension: https://marketplace.visu
 
 Open GitHub Copilot extension to see all the available functionality.
 
--- **Explain**
+- **Explain**
 
 Select the line that has the regex in the validatePhoneNumber method, in the chat ask Copilot chat to explain this code for you (note you can type /explain to shorten this ask).
 
--- **Language translation**
+- **Language translation**
 
 Select some source code such as your randomeuropeancountry:
 
@@ -153,17 +153,17 @@ var countries = new[] { "Spain", "France", "Germany", "Italy", "Portugal", "Swed
 
 Then use the "LANGUAGE TRANSLATION" section select python and click "Ask Copilot" button, you should see new code in python.
 
--- **Readable**
+- **Readable**
 
 Select the content of randomeuropeancountry
 
 In the chat ask Copilot to make your code more readable.
 
--- **Add Unit Tests**
+- **Add Unit Tests**
 
 You probably have been creating Unit Tests for all your code so far, so if you have please remove tests for one of your implementations and select the code and ask Copilot Chat to add unit tests (note you can type /tests to shorten this ask).
 
--- **Fix Bug**
+- **Fix Bug**
 
 In the exercise, there should be no bugs, since most of the code will be done by CoPilot. We can force some errors and then test the debug functionality.
 
@@ -175,7 +175,7 @@ return countries[countries.Length + 1];
 
 Then select the code method and ask copilot chat to fix the bugs it may find (note you can type /fix to shorten this ask).
 
--- **Document Code**
+- **Document Code**
 
 Select some lines of code
 
