@@ -131,7 +131,7 @@ docker run -d -p 8080:80 --name dotnetapp dotnetapp
 
 # GitHub Copilot Chat exercises
 
-The following tasks can be performed using the Copilot Cah add-in, currently this is in BETA so you may find some bugs.
+The following tasks can be performed using the Copilot Chat add-in, currently this is in BETA so you may find some bugs.
 
 Make sure to install the GitHub Copilot Chat extension: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat
 (If working in a codespace this will have been added automatically for you via configuration)
