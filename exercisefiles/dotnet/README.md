@@ -138,11 +138,11 @@ Make sure to install the GitHub Copilot Chat extension: https://marketplace.visu
 
 Open GitHub Copilot extension to see all the available functionality.
 
-- **Explain**
+-- **Explain**
 
 Select the line that has the regex in the validatePhoneNumber method, in the chat ask Copilot chat to explain this code for you (note you can type /explain to shorten this ask).
 
-- **Language translation**
+-- **Language translation**
 
 Select some source code such as your randomeuropeancountry:
 
