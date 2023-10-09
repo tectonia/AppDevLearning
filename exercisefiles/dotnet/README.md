@@ -153,7 +153,7 @@ var countries = new[] { "Spain", "France", "Germany", "Italy", "Portugal", "Swed
 
 Then use the "LANGUAGE TRANSLATION" section select python and click "Ask Copilot" button, you should see new code in python.
 
-- **Readable**
+-- **Readable**
 
 Select the content of randomeuropeancountry
 
