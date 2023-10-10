@@ -6,7 +6,7 @@ The goal of this exercise is to learn how to use GitHub Copilot, using an exerci
 
 ## Exercises
 
-We have created a Spring Boot project with some files already created, you can find the project in the folder **exercisefiles/springboot**. 
+We have created a Spring Boot project with some files already created, you can find the project in the folder **exercisefiles/springboot**.
 
 Let's start copiloting!!!
 
@@ -28,19 +28,19 @@ Test: `curl -v http://localhost:8080/hello?key=world`
 
 ### 2. Dates comparison
 
-New operation under /diffdates that calculates the difference between two dates. The operation should receive two dates as parameter in format dd-MM-yyyy and return the difference in days. 
+New operation under /diffdates that calculates the difference between two dates. The operation should receive two dates as parameter in format dd-MM-yyyy and return the difference in days.
 
 Additionally, create a unit test that validates the operation.
 
-From now on, you will have to create the unit tests for every new operation. Wasn't it easy with Copilot? 
+From now on, you will have to create the unit tests for every new operation. Wasn't it easy with Copilot?
 
-### 3. Validate the format of a spanish phone 
+### 3. Validate the format of a UK phone number
 
-Validate the format of a spanish phone number (+34 prefix, then 9 digits, starting with 6, 7 or 9). The operation should receive a phone number as parameter and return true if the format is correct, false otherwise. 
+Validate the format of a uk phone number (+44 prefix, then 10 or 11 digit). The operation should receive a phone number as parameter and return true if the format is correct, false otherwise.
 
-### 4. Validate the format of a spanish DNI
+### 4. Validate the format of a UK postcode
 
-Validate the format of a spanish DNI (8 digits and 1 letter). The operation should receive a DNI as parameter and return true if the format is correct, false otherwise. 
+Validate the format of a UK postcode. The operation should receive a postcode parameter and return true if the format is correct, false otherwise.
 
 ### 5. From color name to hexadecimal code
 
@@ -56,7 +56,7 @@ Create a new operation that call the API https://api.chucknorris.io/jokes/random
 
 Given a url as query parameter, parse it and return the protocol, host, port, path and query parameters. The response should be in Json format.
 
-### 8. List files and folders 
+### 8. List files and folders
 
 List files and folders under a given path. The path should be a query parameter. The response should be in Json format.
 
@@ -70,19 +70,76 @@ Create a zip file with the content of a given folder. The path of the folder sho
 
 ### 11. Containerize the application
 
-Use the Dockerfile provided to create a docker image of the application. There are some comments in the Dockerfile that will help you to complete the exercise. 
+Use the Dockerfile provided to create a docker image of the application. There are some comments in the Dockerfile that will help you to complete the exercise.
 
-In order to build, run and test the docker image, you can use Copilot as well to generate the commands. 
+In order to build, run and test the docker image, you can use Copilot as well to generate the commands.
 
-For instance, create a DOCKER.md file where you can store the commands to build, run and test the docker image. You will notice that Copilot will also help you to document your project and commands. 
+For instance, create a DOCKER.md file where you can store the commands to build, run and test the docker image. You will notice that Copilot will also help you to document your project and commands.
 
 Examples of steps to document: Build the container image, Run the container, Test the container.
 
+## GitHub Copilot Chat exercises
 
+The following tasks can be performed using the Copilot Chat add-in, currently this is in BETA so you may find some bugs.
 
+Make sure to install the GitHub Copilot Chat extension: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat
+(If working in a codespace this will have been added automatically for you via configuration)
 
+Open GitHub Copilot extension to see all the available functionality.
 
+### 12. Explain
 
+Select the line that has the regex in the validatePhoneNumber method, in the chat ask Copilot chat to explain this code for you (note you can type /explain to shorten this ask).
 
+### 13. Language translation
 
+Select some source code such as your diffdates:
 
+```java
+public String diffdates(@RequestParam(name = "date1", required = false) String date1, @RequestParam(name = "date2", required = false) String date2) throws ParseException {
+    if (date1 == null || date2 == null) {
+        return "date not passed";
+    }
+    SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+    Date date1Obj = sdf.parse(date1);
+    Date date2Obj = sdf.parse(date2);
+    long diffInMillies = Math.abs(date2Obj.getTime() - date1Obj.getTime());
+    long diff = TimeUnit.DAYS.convert(diffInMillies, TimeUnit.MILLISECONDS);
+    return "difference in days: " + diff;
+}
+```
+
+Then in Copilot Chat ask if it can rewrite this code in Python.
+
+### 14. Readable
+
+Select the content of diffdates
+
+In the chat ask Copilot to make your code more readable.
+
+### 15. Add Unit Tests
+
+You probably have been creating Unit Tests for all your code so far, so if you have please remove tests for one of your implementations and select the code and ask Copilot Chat to add unit tests (note you can type /tests to shorten this ask).
+
+### 16. Fix Bug
+
+In the exercise, there should be no bugs, since most of the code will be done by Copilot. Amend your code to force an error and debug this as incorrect.
+
+Then select the code method and ask copilot chat to fix the bugs it may find (note you can type /fix to shorten this ask).
+
+### 17. Document Code
+
+Select some lines of code
+
+In the chat ask Copilot to add a comment to explain each line
+
+### 18. Explore Copilot and Copilot Chat
+
+Use the skills you have learned from Copilot and Copilot Chat to start some new code of your choosing and add to this code
+Examples may be:
+
+- A new website based on a new framework
+- Create an application in a language you are unfamiliar with (note the codespace is only configured for node, java and dotnet)
+- Create a new API
+- Do some Infrastructure-as-code to create some cloud resources using Terraform, ARM or Bicep.
+- Use your imagination, have some fun!

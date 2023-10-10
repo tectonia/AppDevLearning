@@ -151,7 +151,7 @@ var countries = new[] { "Spain", "France", "Germany", "Italy", "Portugal", "Swed
     return countries[new Random().Next(0, countries.Length)];
 ```
 
-Then use the "LANGUAGE TRANSLATION" section select python and click "Ask Copilot" button, you should see new code in python.
+Then in Copilot Chat ask if it can rewrite this code in Python.
 
 - **Readable**
 
@@ -181,10 +181,11 @@ Select some lines of code
 
 In the chat ask Copilot to add a comment to explain each line
 
-# Explore Copilot and Copilot Chat
+## Explore Copilot and Copilot Chat
 
 Use the skills you have learned from Copilot and Copilot Chat to start some new code of your choosing and add to this code
 Examples may be:
+
 - A new website based on a new framework
 - Create an application in a language you are unfamiliar with (note the codespace is only configured for node, java and dotnet)
 - Create a new API
