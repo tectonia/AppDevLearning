@@ -7,6 +7,9 @@ Following the plan [here](https://learn.microsoft.com/en-us/azure/app-service/qu
 3. The Azure Tools extension.
 4. The latest .NET 7.0 SDK.
 
+**Align with Simon on this **
+
+
 ## Step Zero Understanding web apps
 Cover:
 1. App Service is the umbrella terms of web apps, web app for containers, APIs etc.
@@ -34,3 +37,9 @@ Things to think about:
 ## Step Four Deploy/Publish from VS Code to the web app
 
 ## Step Five make a change and redeploy
+
+## Stretch goal
+1. container
+2. deployment slot
+3. authentication
+4. 
