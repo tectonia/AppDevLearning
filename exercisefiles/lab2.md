@@ -8,7 +8,16 @@ Following the plan [here](https://learn.microsoft.com/en-us/azure/app-service/qu
 4. The latest .NET 7.0 SDK.
 
 ## Step Zero Understanding web apps
+Cover:
+1.App Service is the umbrella terms of web apps, web app for containers, APIs etc.
+2. platform as a service - managed service -what that means
+3. Fastest way to get some web capability public
+4. Cares little about the programming language or runtime
+5. TLS out of the box (not so with all other compute services)
+6. Deploying the web app and deploying its code are two separate things - each with their own lifecycle. Deploying the code must be after the web app and is usually done much more frequently.
+7. 
 
+   
 ## Step One Create an ASP.NET web app
 
 Things to think about:
