@@ -9,7 +9,7 @@ Following the plan [here](https://learn.microsoft.com/en-us/azure/app-service/qu
 
 ## Step Zero Understanding web apps
 Cover:
-1.App Service is the umbrella terms of web apps, web app for containers, APIs etc.
+1. App Service is the umbrella terms of web apps, web app for containers, APIs etc.
 2. platform as a service - managed service -what that means
 3. Fastest way to get some web capability public
 4. Cares little about the programming language or runtime
