@@ -46,6 +46,13 @@ Steps:
 
 5. Hit the "Create" button and then wait a few minutes.
 
+You should now have a web application in the portal. This is now a public-facing live web site with the URL https://YOUR_WEB_APP_NAME.azurewebsites.net.
+
+Try putting that in a browser session (with your web app name). You should see something like this:
+![alt text](./images/empty-web-app-running.png "web app running before code")
+
+If this is the case, then the web app exists and is running. All we have to do now it to put our own code on the web app so that it is a real application.
+
 ## Step Four Deploy/Publish from VS Code to the web app
 
 ## Step Five make a change and redeploy
