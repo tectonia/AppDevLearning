@@ -1,5 +1,4 @@
 # .NET lab
-# Cloud Native/App Service lab
 
 ## Prerequities
 1. Visual Studio Code.
