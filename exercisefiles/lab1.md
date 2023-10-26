@@ -19,19 +19,19 @@ Build a simple console app in your local copy of Visual Studio Code, then build 
 
 Steps:
 Following the plan [here](https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-7-0)
-1. In VS Code, open a command prompt.
+1. In VS Code, open a Terminal Window.
 2. Ensure you're in the directly that you want to be, if not change it, e.g. cd c:\<mydir>
 3. Type "dotnet new console -o mynewconsoleapp"
 4. Open the folder that contain your app in VS Code.
 5. Take a look at the code is "Program.cs"
 6. Replace the code with the following:
    
-   for (int i = 1; i <= 255; i++)
-    {
-      Console.WriteLine(i);
-    }
-    Console.WriteLine("Press any key to continue...");
-    Console.ReadKey();
+   for (int i = 1; i <= 255; i++) <br />
+    { <br />
+      Console.WriteLine(i); <br />
+    } <br />
+    Console.WriteLine("Press any key to continue..."); <br />
+    Console.ReadKey(); <br />
    
 9. Save the code. 
 10. Then run again.
@@ -48,7 +48,14 @@ Following the plan [here](https://learn.microsoft.com/en-us/dotnet/core/tutorial
 
 ![alt text](./images/vs-code-debug.png "VS Code Debug")
 
-## Step Three - build a web app 
+## Step Four - list all templates 
+We'll list all the templates avaiables in .Net. 
+
+Steps:
+1. Type "dotnet new list" in the Terminal. 
+2. Take a look at the different types of templates. 
+
+## Step Five - build a web app 
 Build again in VS Code.  
 This app will be used in the next session. 
 
