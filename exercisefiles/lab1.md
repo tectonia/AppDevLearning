@@ -19,11 +19,14 @@ Build a simple console app in your local copy of Visual Studio Code, then build 
 Steps:
 Following the plan [here](https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?pivots=dotnet-7-0)
 1. In VS Code, open a Terminal Window.
-2. Ensure you're in the directly that you want to be, if not change it, e.g. cd c:\<mydir>
-3. Type "dotnet new console -o mynewconsoleapp"
-4. Open the folder that contain your app in VS Code.
-5. Take a look at the code is "Program.cs"
-6. Replace the code with the following:
+2. Ensure you're in the directory that you want to be, if not change with cd c:\<mydir>
+3. Run: 
+   ```
+   dotnet new console -o mynewconsoleapp
+   ```
+5. Open the folder that contains your app in VS Code.
+6. Take a look at the code in "Program.cs".
+7. Replace the code with the following:
   ```
    for (int i = 1; i <= 255; i++)
    { 
@@ -42,8 +45,8 @@ Steps:
 Following the plan [here](https://learn.microsoft.com/en-us/dotnet/core/tutorials/debugging-with-visual-studio-code?pivots=dotnet-7-0)
 1. In the Program.cs file add breakpoint to "Console.WriteLine(i);"
 2. Select Run and Debug from the left side menu.
-3. Select Step Into in the Degub Toolbar
-4. Watch the variables in the Local Variables
+3. Select Step Into in the Degub Toolbar.
+4. Watch the variables in the Local Variables.
 
 ![alt text](./images/vs-code-debug.png "VS Code Debug")
 
@@ -51,8 +54,11 @@ Following the plan [here](https://learn.microsoft.com/en-us/dotnet/core/tutorial
 We'll list all the templates avaiables in .Net. 
 
 Steps:
-1. Type "dotnet new list" in the Terminal. 
-2. Take a look at the different types of templates. 
+1. Run in the Terminal:
+   ```
+   dotnet new list
+   ```
+3. Take a look at the different types of templates. 
 
 ## Step Five - build a web app 
 Build again in VS Code.  
