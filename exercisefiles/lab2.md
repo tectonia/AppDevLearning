@@ -62,9 +62,17 @@ However, it is sometimes useful to directly deploy from VS Code.
 Your copy of VS Code should already have the application code and also should have an "Azure" extension installed.
 
 The Azure extension needs to be logged onto your Azure subscription.
+
 ![alt text](./images/vscode-azure-extension.png "sign-in to Azure in VS Code")
 
-Once logged on, pick the Azure extension
+Once logged on, pick your Azure subscription - if there is more than one in the list. You should see a list of services that the extension can work with:
+
+![alt text](./images/vscode-azure-list.png "Azure extension in VS Code")
+
+Open the "App Services" one with the ">" arrow:
+
+![alt text](./images/vscode-app-service-list.png "App Services in VS Code")
+
 
 ## Step Five make a change and redeploy
 
