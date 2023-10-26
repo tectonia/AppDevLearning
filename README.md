@@ -1,4 +1,4 @@
-# App Dev Learning .NET repo!
+# App Dev Learning repo!
 
 This repo contains labs for learning about the basics of app dev on Azure with Microsoft tools from developing a simple cloud native .NET web app, through deploying it to App Service to learning about DevOps practices and tools like devcontainers, CI/CD and GitHub Copilot. It also includes a lab where we set up a low code solution using Logic Apps. 
 
