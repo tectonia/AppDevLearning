@@ -24,14 +24,14 @@ Following the plan [here](https://learn.microsoft.com/en-us/dotnet/core/tutorial
 4. Open the folder that contain your app in VS Code.
 5. Take a look at the code is "Program.cs"
 6. Replace the code with the following:
-   
-   for (int i = 1; i <= 255; i++) <br />
-    { <br />
-      Console.WriteLine(i); <br />
-    } <br />
-    Console.WriteLine("Press any key to continue..."); <br />
-    Console.ReadKey(); <br />
-   
+  ```
+   for (int i = 1; i <= 255; i++)
+   { 
+        Console.WriteLine(i); 
+   }
+   Console.WriteLine("Press any key to continue..."); 
+   Console.ReadKey(); 
+   ```
 9. Save the code. 
 10. Then run again.
 
