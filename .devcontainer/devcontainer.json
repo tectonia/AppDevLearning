@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
 {
-	"name": "GitHub Copilot Hackathon",
+	"name": ".NET web app",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/dotnet:0-7.0",
 	"features": {
@@ -14,10 +14,6 @@
 		},
 		"ghcr.io/devcontainers/features/docker-in-docker:1": {
 			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/java:1": {
-			"version": "17",
-			"installMaven": true
 		}
 	},
 	"customizations": {
@@ -26,11 +22,12 @@
 				"GitHub.copilot",
 				"GitHub.copilot-labs",
 				"GitHub.copilot-chat",
-				"redhat.vscode-yaml",
 				"GitHub.vscode-github-actions",
 				"ms-azuretools.vscode-docker",
+				"ms-dotnettools.csharp",
 				"ms-dotnettools.csdevkit",
-				"vscjava.vscode-java-pack"
+				"ms-vscode.vscode-node-azure-pack",
+				"ms-azuretools.vscode-azureappservice"				
 			]
 		}
 	},
