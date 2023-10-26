@@ -27,7 +27,7 @@ Following the plan [here](https://learn.microsoft.com/en-us/dotnet/core/tutorial
 5. Open the folder that contains your app in VS Code.
 6. Take a look at the code in "Program.cs".
 7. Replace the code with the following:
-  ```
+   ```
    for (int i = 1; i <= 255; i++)
    { 
         Console.WriteLine(i); 
