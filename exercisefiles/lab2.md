@@ -52,7 +52,7 @@ Try putting that in a browser session (with your web app name). You should see s
 
 If this is the case, then the web app exists and is running. All we have to do now it to put our own code on the web app so that it is a real application.
 
-## Step Four Deploy/Publish from VS Code to the web app
+## Step Four - Deploy/Publish from VS Code to the web app
 This step is back in Visual Studio Code (VS Code).
 
 In this step we are going to deploy directly from VS Code. In production, this would not normally done this way, but would be done in some automated manner in the likes of GitHub or Azure DevOps. This will be a later lab.
@@ -79,10 +79,44 @@ Now validate that the code has been successfully deployed by checking on your we
 
 https://YOUR_WEB_APP_NAME.azurewebsites.net
 
-## Step Five make a change and redeploy
+So now you know what the code for an ASP.NET web application looks like and how to debug locally and now how to get this web application on Azure. It's exaclty the same for web APIs. Next step is making a change and redeploying.
 
-## Stretch goal
-1. container
-2. deployment slot
+
+## Step Five - Make a change and redeploy
+1. In VS Code - make a change to one of the headers in your application
+2. Test this locally to validate this has the intended effect.
+3. Go to the Azure Extension, find your web app again and then right-click and redeploy.
+4. Wait until completion and validate using the URL
+
+This is the process that often happens in a development lifecycle - multiple deploys of new versions of code to an existing web app.
+
+What if there were concerns that mistakes could be made? How can I validate this on Azure and how can I deploy safely and potentially revert a change. This is a challenge for most organisations. Web apps have a feature which can help.
+
+## Step Six - Deployment Slots
+[Deployment slots](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal) or staging environments is a feature that allows the a web application to have a main slot and other slots. In general, customers chose one other slot and name it "staging".
+
+The idea is that deployments will not be made to the main application - but to the staging slot. This will have a name of the form:
+
+https://YOUR_WEB_APP_NAME-YOUR-SLOT-NAME.azurewebsites.net.
+
+You can then test the application on this slot and when ready "slot swap". This is a feature of a web app that has a deployment slot, where the roles of the main and the staging slot get swapped.
+
+![alt text](./images/deployment-slot-swap.png "App Services deployment slot")
+
+As can be seen above, the staging and main are about to be swapped. Once this is completed a new version of the application will be on the main URL of the web app. The beauty of this approach is that if issues are subsequently found, then the swap can be performed again to reverse the effect of the change - giving a customer the ability to easily rollback any change to their web app.
+
+The golden rule of such an approach is to only deploy to the staging slot.
+
+Try it out!
+
+** Deployment slots are only available on some app service SKUs. If this feature is not available, then change the SKU of the app service plan to a "standard" SKU e.g. S1.
+
+![alt text](./images/app-service-scale-up.png "App Services scale up")
+
+
+
+## Stretch goal ideas
+1. containers
 3. authentication
-4. 
+4. private apps
+5. application settings
