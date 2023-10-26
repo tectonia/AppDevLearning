@@ -18,7 +18,6 @@ Cover:
 4. Cares little about the programming language or runtime
 5. TLS out of the box (not so with all other compute services)
 6. Deploying the web app and deploying its code are two separate things - each with their own lifecycle. Deploying the code must be after the web app and is usually done much more frequently.
-7. 
 
    
 ## Step One Create an ASP.NET web app
@@ -27,12 +26,25 @@ Things to think about:
 1. It's name
 2. Resource Group
 3. Region
-4. Service plan - Windows or Linux
+4. Service plan - Windows or Linux and SKU
 5. Runtime
 
 ## Step Two build and run locally
+This should be covered from the previous session. Make sure your application is up and running locally.
 
 ## Step Three Create a web app in the portal
+Steps:
+1. type "web app" in the search part of the portal
+2. Choose the "App Services" item in the search results
+![alt text](./images/portal-web-apps.png "App Services")
+
+3. Choose "Create" then "Web App"
+![alt text](./images/portal-web-app-create.png "create web app")
+   
+4. You should then choose some suitable values for the web app. The name must be unique. 
+![alt text](./images/portal-web-app-create-options.png "web app create options")
+
+5. Hit the "Create" button and then wait a few minutes.
 
 ## Step Four Deploy/Publish from VS Code to the web app
 
