@@ -92,7 +92,25 @@ This is the process that often happens in a development lifecycle - multiple dep
 
 What if there were concerns that mistakes could be made? How can I validate this on Azure and how can I deploy safely and potentially revert a change. This is a challenge for most organisations. Web apps have a feature which can help.
 
-## Step Six - Deployment Slots
+## Step Six - web app for containers
+Web apps can also run Docker containers. Here's how to deploy one.
+
+1. Choose web app for containers or Create the web app, but choose "Docker Container" Option:
+![alt text](./images/app-service-choose-docker.png "App Services choose docker")
+
+3. Move to the Docker tab and set some values:
+![alt text](./images/app-service-container-settings.png "App Services container settings")
+
+The above settings are really important. You may observe that the password is redacted. We will supply that. If this is not correct, the app will not be able to pull the container image.
+
+3. Hit create and wait.
+
+4. Open the web app URL - you should see something like this
+![alt text](./images/app-service-container-recipe.png "Recipe bot")
+
+and have a go!
+
+## Step Seven - stretch goal - Deployment Slots
 [Deployment slots](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal) or staging environments is a feature that allows the a web application to have a main slot and other slots. In general, customers chose one other slot and name it "staging".
 
 The idea is that deployments will not be made to the main application - but to the staging slot. This will have a name of the form:
@@ -113,17 +131,4 @@ Try it out!
 
 ![alt text](./images/app-service-choose-docker.png "App Services choose docker")
 
-## Stretch goal - web app for containers
-Web apps can also run Docker containers. Here's how to deploy one.
 
-1. Choose web app for containers or Create the web app, but choose "Docker Container" Option:
-![alt text](./images/app-service-choose-docker.png "App Services choose docker")
-
-3. Move to the Docker tab and set some values:
-![alt text](./images/app-service-container-settings.png "App Services container settings")
-
-The above settings are really important. You may observe that the password is redacted. We will supply that. If this is not correct, the app will not be able to pull the container image.
-
-3. Hit create and wait.
-
-4. Open the web app URL
