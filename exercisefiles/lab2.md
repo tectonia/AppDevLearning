@@ -111,12 +111,19 @@ Try it out!
 
 ** Deployment slots are only available on some app service SKUs. If this feature is not available, then change the SKU of the app service plan to a "standard" SKU e.g. S1.
 
-![alt text](./images/app-service-scale-up.png "App Services scale up")
+![alt text](./images/app-service-choose-docker.png "App Services choose docker")
 
+## Stretch goal - web app for containers
+Web apps can also run Docker containers. Here's how to deploy one.
 
+1. Choose web app for containers or Create the web app, but choose "Docker Container" Option:
+![alt text](./images/app-service-choose-docker.png "App Services choose docker")
 
-## Stretch goal ideas
-1. containers
-3. authentication
-4. private apps
-5. application settings
+3. Move to the Docker tab and set some values:
+![alt text](./images/app-service-container-settings.png "App Services container settings")
+
+The above settings are really important. You may observe that the password is redacted. We will supply that. If this is not correct, the app will not be able to pull the container image.
+
+3. Hit create and wait.
+
+4. Open the web app URL
