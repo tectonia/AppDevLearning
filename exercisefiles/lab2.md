@@ -103,7 +103,10 @@ Web apps can also run Docker containers. Here's how to deploy one.
 
 The above settings are really important. You may observe that the password is redacted. We will supply that. If this is not correct, the app will not be able to pull the container image.
 
-The key is utNyqU0rPfT5av11ibd0tBV2/4IrQ8h57ykh+EnML1+ACRDOu5 - which is truncated by two characters. The team will let you know.
+ServerURL: https://jjacreg.azurecr.io
+Username: jjacreg
+Image: recipe:latest
+Password: utNyqU0rPfT5av11ibd0tBV2/4IrQ8h57ykh+EnML1+ACRDOu5 - which is truncated by two characters. The team will let you know.
 
 3. Hit create and wait.
 
