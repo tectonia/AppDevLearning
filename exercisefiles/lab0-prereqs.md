@@ -15,5 +15,5 @@
   - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
   - [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 Optional:
-- [GitHub Desktop] (https://desktop.github.com/)
-- [Docker Desktop] (https://www.docker.com/products/docker-desktop/)
+- GitHub Desktop (https://desktop.github.com/)
+- Docker Desktop (https://www.docker.com/products/docker-desktop/)
