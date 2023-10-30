@@ -4,7 +4,7 @@
 - [Link GitHub profile to Microsoft organisation](https://repos.opensource.microsoft.com/link)
 - [GitHub Copilot license](https://repos.opensource.microsoft.com/orgs/MicrosoftCopilot)
 - [VS Code](https://code.visualstudio.com/download)
-- [The latest .NET 7.0 SDK.](https://dotnet.microsoft.com/en-us/download)
+- [The latest .NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download)
 - [Postman](https://www.postman.com/downloads/)
 - VS Code extensions:
   - [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
