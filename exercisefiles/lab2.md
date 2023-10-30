@@ -83,6 +83,8 @@ Then click on this and install:
 
 Now you should be able to choose the web application you created in a previous step and right-click. There should be a pop-up menu which includes the choice *Deploy to Web App* pick this and follow the instructions.
 
+![alt text](./images/app-service-deploy-to-web-app.png "Deploy to web app")
+
 Now validate that the code has been successfully deployed by checking on your web app URL again. As a reminder, it is of the format:
 
 https://YOUR_WEB_APP_NAME.azurewebsites.net
