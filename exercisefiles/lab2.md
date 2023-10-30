@@ -152,9 +152,22 @@ Try it out!
 ## Further learning and labs
 Here is a list of useful destinations in our documentation for learning more about deploying apps on Azure.
 
+### App Services
 [App Service Documentation](https://learn.microsoft.com/en-us/azure/app-service/)
+
 [Deploy an ASP.NET web app](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net70&pivots=development-environment-vscode)
+
 [Deploy a Python web app to Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli)
 
-[]()
+### AKS
+[AKS Documentation](https://learn.microsoft.com/en-us/azure/aks/)
+
+[AKS Quickstart: deploy AKS and a sample app](https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal?tabs=azure-cli)
+
+[AKS Quickstart: deploy an app with Helm](https://learn.microsoft.com/en-us/azure/aks/quickstart-helm?tabs=azure-cli)
+
+### Container Apps
+[Container Apps documentation](https://learn.microsoft.com/en-us/azure/container-apps/)
+
+[Quickstart: Deploy your first container app](https://learn.microsoft.com/en-us/azure/container-apps/quickstart-portal)
 
