@@ -1,6 +1,7 @@
 ## Prerequisites
-- Azure subscription
-- GitHub profile
+- Microsoft laptop with Wi-Fi access
+- Azure subscription and access to the Azure Portal: https://portal.azure.com
+- GitHub profile: https://github.com/
 - [Link GitHub profile to Microsoft organisation](https://repos.opensource.microsoft.com/link)
 - [GitHub Copilot license](https://repos.opensource.microsoft.com/orgs/MicrosoftCopilot)
 - [VS Code](https://code.visualstudio.com/download)
