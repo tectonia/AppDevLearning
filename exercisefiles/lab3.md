@@ -68,10 +68,29 @@ Next step is to create a logic app. Navigate to the Azure Portal to do this.
 ![Resource Group](images/logicapp1.png) 
 ![Resource Group](images/la2.png) 
 ![Resource Group](images/la3.png) 
+![Resource Group](images/la3.1.png) 
 ![Resource Group](images/la4.png) 
 ![Resource Group](images/la5.png) 
 ![Resource Group](images/la6.png) 
+![Resource Group](images/la8.png) 
 
 Leave the defaults on the monitoring and tags, and click create
+
+This will create a new LogicApp, under which we will be creating a workflow to integration SITS and Canvas.
+
+![Resource Group](images/la10.png) 
+![Resource Group](images/la11.png)
+![Resource Group](images/la12.png)
+![Resource Group](images/la13.png)
+![Resource Group](images/la14.png)
+![Resource Group](images/la15.png)
+![Resource Group](images/la16.png)
+![Resource Group](images/la17.png)
+![Resource Group](images/la18.png)
+![Resource Group](images/la19.png)
+![Resource Group](images/la20.png)
+![Resource Group](images/la21.png)
+![Resource Group](images/la22.png)
+![Resource Group](images/la23.png)
 
 # Step 4 - Send Request from Postman
