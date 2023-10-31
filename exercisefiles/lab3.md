@@ -3,7 +3,7 @@
 ![Logic App](/exercisefiles/images/Drawing1.png)
 # Step 0 - Create Resource Group
 
-* Navigate to Azure Portal and create a Resource Group.
+1. Navigate to Azure Portal and create a Resource Group.
 
   >  Resource Group Name : rg-eic-integration-<initials>\
   >  Resource Group Location : westeurope
