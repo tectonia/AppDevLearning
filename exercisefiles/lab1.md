@@ -67,7 +67,57 @@ This app will be used in the next session.
 Steps:
 Following the plan [here](https://dotnet.microsoft.com/en-us/learn/aspnet/hello-world-tutorial/intro)
 
+## Step Five - add another class
+We'll add another class and then make a call from our main program.
 
+Steps:
+1. Add a new file to the solution called "fibonacci.cs".
+2. Add the following code:
+```
+public class Fibonacci
+{
+    public static bool CheckFib(int n)
+    //check if n is a fibonacci number
+    //if n is a fibonacci number, return true
+    //else return false
+    {
+        if (n <= 1)
+        {
+            return true;
+        }
+        int a = 0, b = 1;
+        while (b < n)
+        {
+            int temp = a;
+            a = b;
+            b = temp + b;
+
+            if (b == n)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+The class you have just made, implements a 'CheckFib' method.  This method takes an integer and returns true if the integer is in the fibonacci series, and false if it isn't. 
+
+3. Within the loop of "Program.cs" make a call to the "CheckFib" method in the new class you've just created, passing in the loop iteration int.  If the method call returns true, display the integer.  The code should look like this:
+```
+for (int i = 1; i <= 255; i++)
+{
+    var isfib = Fibonacci.CheckFib(i);
+    if (isfib)
+    {
+        Console.WriteLine("Fibonacci {0}", i);
+    }
+}
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+```
+4. Save all the changes, and execute the code.
+5. Try adding a breakpoint and explore how the code flows. 
 
 ## Stretch goal ideas
 1. Build in Visual Studio.

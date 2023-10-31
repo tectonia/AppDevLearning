@@ -73,7 +73,17 @@ Open the "App Services" one with the ">" arrow:
 
 ![alt text](./images/vscode-app-service-list.png "App Services in VS Code")
 
+You may need to install an extension onto the web app in order to allow deployments. So, if you see
+
+![alt text](./images/app-service-install-extension.png "App Service Extension in VS Code")
+
+Then click on this and install:
+
+![alt text](./images/app-services-extension.png "Install App Service Extension in VS Code")
+
 Now you should be able to choose the web application you created in a previous step and right-click. There should be a pop-up menu which includes the choice *Deploy to Web App* pick this and follow the instructions.
+
+![alt text](./images/app-service-deploy-to-web-app.png "Deploy to web app")
 
 Now validate that the code has been successfully deployed by checking on your web app URL again. As a reminder, it is of the format:
 
@@ -139,4 +149,25 @@ Try it out!
 
 ![alt text](./images/app-service-choose-docker.png "App Services choose docker")
 
+## Further learning and labs
+Here is a list of useful destinations in our documentation for learning more about deploying apps on Azure.
+
+### App Services
+[App Service Documentation](https://learn.microsoft.com/en-us/azure/app-service/)
+
+[Deploy an ASP.NET web app](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net70&pivots=development-environment-vscode)
+
+[Deploy a Python web app to Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli)
+
+### AKS
+[AKS Documentation](https://learn.microsoft.com/en-us/azure/aks/)
+
+[AKS Quickstart: deploy AKS and a sample app](https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal?tabs=azure-cli)
+
+[AKS Quickstart: deploy an app with Helm](https://learn.microsoft.com/en-us/azure/aks/quickstart-helm?tabs=azure-cli)
+
+### Container Apps
+[Container Apps documentation](https://learn.microsoft.com/en-us/azure/container-apps/)
+
+[Quickstart: Deploy your first container app](https://learn.microsoft.com/en-us/azure/container-apps/quickstart-portal)
 
