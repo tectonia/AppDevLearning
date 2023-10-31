@@ -7,8 +7,6 @@ Following the plan [here](https://learn.microsoft.com/en-us/azure/app-service/qu
 3. The Azure Tools extension.
 4. The latest .NET 7.0 SDK.
 
-**Align with Simon on this **
-
 ## Step One - understanding web apps
 Cover:
 1. App Service is the umbrella terms of web apps, web app for containers, APIs etc.
@@ -21,6 +19,8 @@ Cover:
 ## Step Two - verify your app can run locally
 This should be done in your local copy of Visual Studio Code and should be covered from the previous session. 
 Make sure your application is up and running locally.
+
+**This should be the only web app from step five of the previous session.**
 
 ## Step Three - create a web app in the portal
 This step is peformed in the Azure portal.
