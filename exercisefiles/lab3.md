@@ -18,9 +18,13 @@
 1. On the VS Code, navigate on the top menu and click on View.
 1. Click on Terminal, which should open a terminal window at the bottom pane - where you can run cli commands\
 1. In the terminal window, navigate to the path exercisefiles\integrationworkshop\bicep
+1. Login to Azure if you haven't already done so previously
+    ```
+    az login  
+    ```
 1. From here you can run the following command, which will create the Service bus namespace, topics and subscriptions. 
     ```
-    az deployment group create --resource-group <rg name> --parameters servicebus.bicepparam  
+    az deployment group create --resource-group <rg name> --template-file servicebus.bicep --parameters servicebus.bicepparam  
     ```
 1. Once the command is succesful, you can navigate to the Azure Portal, and check in the resource group that a new service bus namespace has been created, and that it has the topics and subscriptions.
 
