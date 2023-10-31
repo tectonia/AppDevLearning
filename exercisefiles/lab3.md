@@ -60,7 +60,18 @@ At the end of the this step, you should have 2 functions called MessageType and 
 ![Resource Group](images/FunctionsCreate5.png) 
 
 Optionally you can test the function app from the portal as well.
- 
+
 # Step 3 - Create Logic App
+
+Next step is to create a logic app. Navigate to the Azure Portal to do this. 
+
+![Resource Group](images/logicapp1.png) 
+![Resource Group](images/la2.png) 
+![Resource Group](images/la3.png) 
+![Resource Group](images/la4.png) 
+![Resource Group](images/la5.png) 
+![Resource Group](images/la6.png) 
+
+Leave the defaults on the monitoring and tags, and click create
 
 # Step 4 - Send Request from Postman
