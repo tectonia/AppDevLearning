@@ -89,6 +89,8 @@ Now validate that the code has been successfully deployed by checking on your we
 
 https://YOUR_WEB_APP_NAME.azurewebsites.net
 
+![alt text](./images/web-app-deployed.png "Deployed to web app")
+
 So now you know what the code for an ASP.NET web application looks like and how to debug locally and now how to get this web application on Azure. It's exaclty the same for web APIs. Next step is making a change and redeploying.
 
 
@@ -101,7 +103,12 @@ So now you know what the code for an ASP.NET web application looks like and how 
 If you created a web app with **dotnet new webapp -o MyWebApp --no-https -f net7.0**, then you can change some of the text in **Index.cshtml**
 ![alt text](./images/web-app-index.png "edit Index.cshtml")
 
-Don't forget to save the change (Ctrl-S)
+could be changed to:
+![alt text](./images/index-page-amended.png "edited Index.cshtml")
+
+Don't forget to save the change (Ctrl-S). Then right-click the web app and "Deploy to web app" again.
+
+![alt text](./images/web-app-amended.png "Amended web app")
 
 This is the process that often happens in a development lifecycle - multiple deploys of new versions of code to an existing web app.
 
