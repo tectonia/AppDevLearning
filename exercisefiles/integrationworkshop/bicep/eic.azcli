@@ -1,0 +1,1 @@
+az deployment group create --resource-group $resourceGroupName --name $deploymentGroupName --template-file functions.bicep --parameters functions.bicepparam --verbose
