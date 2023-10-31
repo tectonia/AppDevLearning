@@ -110,7 +110,8 @@ az deployment group create --resource-group <rg name> --parameters functions.bic
   
 ![Resource Group](images/la14.png)
 
-* Next step is to add a Action to call one of the Azure functions we have created before.
+* Next step is to add a Action to call one of the Azure functions we have created before.Let's rename this action to **Return Message Type** - Using the following screen shots, you can add this Azure function action, and create a connection string to call the **MessageType** function we created earlier.
+* We will be passing the same message which came in to the http request to the Azure function, along with sending 2 header values messagetype and operation, which are incoming from the http request as well.
   
 ![Resource Group](images/la15.png)
 ![Resource Group](images/la16.png)
@@ -122,20 +123,49 @@ test
 ![Resource Group](images/la20.png)
 ![Resource Group](images/la21.png)
 ![Resource Group](images/la22.png)
+
+* Lets add the next action to our workflow, which is a compose Action - this is to wrap the incoming json message with a overall root node. This is needed, as we will be converting this json message into xml in the following steps - and xml conversion will expect a overall root node. The exact name of the root node to be wrapped will be returned by the Return Message Type
+* 
 ![Resource Group](images/la23.png)
 
 ![Resource Group](images/la24.png)
+
+* Let's rename this action as **Wrap in root node**
 ![Resource Group](images/la25.png)
+* For the inputs, we need to create a json as shown below. so we start with 2 curly brackets, and then use the wrapper element and the actual body of the message. 
+```json
+{
+  "name":"value"
+}
+```
 ![Resource Group](images/la26.png)
 ![Resource Group](images/la27.png)
+* Let's add the next shape into our workflow, which is to Transform the XML message from one format to another. We will use an action called Transform XML as shown below.
+  
+![Resource Group](images/xmlaction.png)
+
+* Because Transform XML works with xml message, we need to convert the json file which we have to xml. Logic apps have built-in functions to do such conversions, one of them is called xml(), which will convert the object passed into XML. We will use this function to convert.
+  
 ![Resource Group](images/la28.png)
+* We will dynamically use a map based on the incoming message, as determined by the returnmessagetype. Put an .xslt extension at the end of the file
+![Resource Group](images/mapname.png)
+* Time to add the next action, which is again calling the second function which we created called FormatJsonPayload. This function will take the incoming json, and formats, indents and sends the message back. 
+* 
 ![Resource Group](images/la29.png)
+* Make sure you are using a new connection string for this Function call, as you want to call the FormatJsonPayload. At the bottom of the shape, you can see "change connection" - click on that
 ![Resource Group](images/la30.png)
+* Time to add the next action in our workflow, which will be to send the message to Service Bus
+* You need to create a connection string to the service bus. To get the connection string for the service bus, refer the screen shot which states Serice Bus connection string.
+* 
 ![Resource Group](images/la32.png)
 ![Resource Group](images/la33.png)
+
+**Service Bus Connecting String**
+![Resource Group](images/sbconnectinnstring.png)
 ![Resource Group](images/la36.png)
-![Resource Group](images/la37.png)
 ![Resource Group](images/la38.png)
+![Resource Group](images/la37.png)
+
 ![Resource Group](images/la39.png)
 
 # Step 4 - Send Request from Postman
