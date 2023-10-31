@@ -5,8 +5,11 @@
 
 1. Navigate to Azure Portal and create a Resource Group.
 
-  >  Resource Group Name : rg-eic-integration-<initials>\
-  >  Resource Group Location : westeurope
+  *  Resource Group Name : rg-eic-integration-**[YOUR-INITIALS]**
+  *  Resource Group Location : westeurope
+
+  > **Note** 
+  > Replace **[YOUR-INITIALS]** with your own initials.
 
 ![Resource Group](images/ResourceGroup.png)
 
@@ -89,7 +92,10 @@
     ![Resource Group](images/logicapp1.png) 
     ![Resource Group](images/la2.png) 
     ![Resource Group](images/la3.png) 
-    ![Resource Group](images/la3.1.png) 
+    ![Resource Group](images/la3.1.png)
+     > **Note** 
+     > Give the Logic Apps a unique name. For example, you can use rg-eic-integration-**[YOUR-INITIALS]**-logicapp replacing **[YOUR-INITIALS]** with your own initials.
+     
     ![Resource Group](images/la4.png) 
     ![Resource Group](images/la5.png) 
     ![Resource Group](images/la6.png) 
