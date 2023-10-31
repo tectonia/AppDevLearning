@@ -1,2 +1,7 @@
 # DevOps lab
-## TO DO @ Juliane + Martyna
+## .NET project
+### 1. Create GitHub repo
+### 2. Commits, branching and pull requests
+### 3. Setup a GitHub Actions workflow for App Service deployment
+## Java project
+### 4. GitHub Copilot 
