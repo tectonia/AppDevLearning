@@ -98,9 +98,14 @@ So now you know what the code for an ASP.NET web application looks like and how 
 3. Go to the Azure Extension, find your web app again and then right-click and redeploy.
 4. Wait until completion and validate using the URL
 
+If you created a web app with **dotnet new webapp -o MyWebApp --no-https -f net7.0**, then you can change some of the text in **Index.cshtml**
+![alt text](./images/web-app-index.png "edit Index.cshtml")
+
+Don't forget to save the change (Ctrl-S)
+
 This is the process that often happens in a development lifecycle - multiple deploys of new versions of code to an existing web app.
 
-What if there were concerns that mistakes could be made? How can I validate this on Azure and how can I deploy safely and potentially revert a change. This is a challenge for most organisations. Web apps have a feature which can help.
+What if there were concerns that mistakes could be made? How can I validate this on Azure and how can I deploy safely and potentially revert a change. This is a challenge for most organisations. Web apps have a feature which can help. See the stretch goal step later.
 
 ## Step Six - web app for containers
 Web apps can also run Docker containers. Here's how to deploy one.
