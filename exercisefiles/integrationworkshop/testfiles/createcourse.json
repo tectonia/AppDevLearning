@@ -1,0 +1,38 @@
+{
+    "EXCHANGE": {
+      "MAV": {
+        "MAV.CAMS": [
+          {
+            "MOD_CODE.MAV.CAMS": "CW6098",
+            "MAV_OCCUR.MAV.CAMS": "A",
+            "AYR_CODE.MAV.CAMS": "2017/8",
+            "PSL_CODE.MAV.CAMS": "PB13",
+            "PRS_CODE.MAV.CAMS": "KU59341",
+            "DPT_CODE.MAV.CAMS": "Sandbox",
+            "MAV_UDF7.MAV.CAMS": "A",
+            "MAV_MAVN.MAV.CAMS": "Special Study: Get a Life: Forms of (Auto)biography",
+            "MOD": {
+              "MOD.CAMS": [
+                {
+                  "MOD_CODE.MOD.CAMS": "CW6093",
+                  "DPT_CODE.MOD.CAMS": "Sandbox",
+                  "MOD_FACC.MOD.CAMS": "HS"
+                }
+              ]
+            },
+            "PSL": {
+              "PSL.SRS": [
+                {
+                  "PSL_CODE.PSL.SRS": "PB13",
+                  "PSL_NAME.PSL.SRS": "Teaching Year 2013",
+                  "PSL_BEGW.PSL.SRS": "1",
+                  "PSL_ENDW.PSL.SRS": "22"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+  

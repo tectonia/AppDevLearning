@@ -1,0 +1,59 @@
+{
+    "EXCHANGE": {
+      "SCE": {
+        "SCE.SRS": [
+          {
+            "SCE_SCJC.SCE.SRS": "1410015/2",
+            "SCE_SEQ2.SCE.SRS": "01",
+            "SCE_STUC.SCE.SRS": "1410015",
+            "SCE_AYRC.SCE.SRS": "2015/6",
+            "SCE_CRSC.SCE.SRS": "UFBUS3ACC02",
+            "SCE_BLOK.SCE.SRS": "2",
+            "SCE_OCCL.SCE.SRS": "B1KI0",
+            "SCE_STAC.SCE.SRS": "DO",
+            "SCE_DPTC.SCE.SRS": "BBS",
+            "SCE_FACC.SCE.SRS": "BS",
+            "STU": {
+              "STU.SRS": [
+                {
+                  "STU_CODE.STU.SRS": "1410015",
+                  "STU_TITL.STU.SRS": "MISS",
+                  "STU_SURN.STU.SRS": "SELVANAYAGAM",
+                  "STU_FUSD.STU.SRS": "LAVUZA",
+                  "STU_INEM.STU.SRS": "kevin.middleton@kingston.ac.uk",
+                  "FAC": {
+                    "FAC.SRS": [
+                      {
+                        "FAC_CODE.FAC.SRS": "BS",
+                        "FAC_NAME.FAC.SRS": "Faculty of Business and Law"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "CRS": {
+              "CRS.SRS": [
+                {
+                  "CRS_CODE.CRS.SRS": "UFBUS3ACC02",
+                  "CRS_NAME.CRS.SRS": "Business with Accounting BSc Hons 3FT"
+                }
+              ]
+            },
+            "SMO": {
+              "SMO.CAMS": [
+                {
+                  "SPR_CODE.SMO.CAMS": "1410015/2",
+                  "MOD_CODE.SMO.CAMS": "",
+                  "MAV_OCCUR.SMO.CAMS": "",
+                  "AYR_CODE.SMO.CAMS": "",
+                  "PSL_CODE.SMO.CAMS": ""
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+  

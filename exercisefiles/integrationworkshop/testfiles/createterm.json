@@ -1,0 +1,16 @@
+{
+    "EXCHANGE": {
+      "YPS": {
+        "YPS.SRS": [
+          {
+            "YPS_AYRC.YPS.SRS": "2017/8",
+            "YPS_PSLC.YPS.SRS": "SPAN1",
+            "YPS_BEGD.YPS.SRS": "2017-08-01",
+            "YPS_ENDD.YPS.SRS": "2018-07-27"
+          }
+        ]
+      }
+    }
+  }
+  
+  

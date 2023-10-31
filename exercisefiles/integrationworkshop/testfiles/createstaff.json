@@ -1,0 +1,16 @@
+{ 
+  "EXCHANGE" : { 
+   "PRS" : { 
+    "PRS.MENSYS" : [
+      {
+        "PRS_CODE.PRS.MENSYS": "40559_2",
+        "PRS_TTLC.PRS.MENSYS": "MR",
+        "PRS_SURN.PRS.MENSYS": "FARRELL",
+        "PRS_EMAD.PRS.MENSYS": "KU40559@KINGSTON.AC.UK",
+        "PRS_IUSE.PRS.MENSYS": "Y",
+        "PRS_FUSD.PRS.MENSYS": "Michael"
+      }
+   ]
+  }
+ }
+}
