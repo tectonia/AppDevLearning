@@ -67,7 +67,7 @@ This app will be used in the next session.
 Steps:
 Following the plan [here](https://dotnet.microsoft.com/en-us/learn/aspnet/hello-world-tutorial/intro)
 
-## Step Five - add another class
+## Step Six - add another class
 We'll add another class and then make a call from our main program.
 
 Steps:
@@ -120,6 +120,6 @@ Console.ReadKey();
 5. Try adding a breakpoint and explore how the code flows. 
 
 ## Stretch goal ideas
-1. Build in Visual Studio.
-2. Build a Blazor Web Assembly app.
+1. Build in Visual Studio, following the guide [here](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2022)
+2. Build a Blazor Web Assembly app, following the guide [here](https://learn.microsoft.com/en-us/training/modules/build-blazor-webassembly-visual-studio-code/)
 

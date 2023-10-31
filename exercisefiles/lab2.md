@@ -7,20 +7,20 @@ Following the plan [here](https://learn.microsoft.com/en-us/azure/app-service/qu
 3. The Azure Tools extension.
 4. The latest .NET 7.0 SDK.
 
-**Align with Simon on this **
-
 ## Step One - understanding web apps
-Cover:
+Summarising from previous slide decks:
 1. App Service is the umbrella terms of web apps, web app for containers, APIs etc.
-2. platform as a service - managed service - what that means
+2. Platform as a service (PaaS)- a managed service
 3. Fastest way to get some web capability running
-4. Cares little about the programming language or runtime
+4. App Service cares little about the app's programming language or runtime (Windows vs. Linux)
 5. TLS out of the box (not so with all other compute services)
 6. Deploying the web app and deploying its code are two separate things - each with their own lifecycle. Deploying the code must be after the web app and is usually done much more frequently.
 
 ## Step Two - verify your app can run locally
 This should be done in your local copy of Visual Studio Code and should be covered from the previous session. 
 Make sure your application is up and running locally.
+
+**This should be the only web app from step five of the previous session.**
 
 ## Step Three - create a web app in the portal
 This step is peformed in the Azure portal.
@@ -89,6 +89,8 @@ Now validate that the code has been successfully deployed by checking on your we
 
 https://YOUR_WEB_APP_NAME.azurewebsites.net
 
+![alt text](./images/web-app-deployed.png "Deployed to web app")
+
 So now you know what the code for an ASP.NET web application looks like and how to debug locally and now how to get this web application on Azure. It's exaclty the same for web APIs. Next step is making a change and redeploying.
 
 
@@ -98,9 +100,19 @@ So now you know what the code for an ASP.NET web application looks like and how 
 3. Go to the Azure Extension, find your web app again and then right-click and redeploy.
 4. Wait until completion and validate using the URL
 
+If you created a web app with **dotnet new webapp -o MyWebApp --no-https -f net7.0**, then you can change some of the text in **Index.cshtml**
+![alt text](./images/web-app-index.png "edit Index.cshtml")
+
+could be changed to:
+![alt text](./images/index-page-amended.png "edited Index.cshtml")
+
+Don't forget to save the change (Ctrl-S). Then right-click the web app and "Deploy to web app" again.
+
+![alt text](./images/web-app-amended.png "Amended web app")
+
 This is the process that often happens in a development lifecycle - multiple deploys of new versions of code to an existing web app.
 
-What if there were concerns that mistakes could be made? How can I validate this on Azure and how can I deploy safely and potentially revert a change. This is a challenge for most organisations. Web apps have a feature which can help.
+What if there were concerns that mistakes could be made? How can I validate this on Azure and how can I deploy safely and potentially revert a change. This is a challenge for most organisations. Web apps have a feature which can help. See the stretch goal step later.
 
 ## Step Six - web app for containers
 Web apps can also run Docker containers. Here's how to deploy one.
