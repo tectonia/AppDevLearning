@@ -77,15 +77,14 @@ Steps:
 public class Fibonacci
 {
     public static bool CheckFib(int n)
-        //check if n is a fibonacci number
-        //if n is a fibonacci number, return true
-        //else return false
+    //check if n is a fibonacci number
+    //if n is a fibonacci number, return true
+    //else return false
     {
         if (n <= 1)
         {
             return true;
         }
-
         int a = 0, b = 1;
         while (b < n)
         {
@@ -98,9 +97,7 @@ public class Fibonacci
                 return true;
             }
         }
-
         return false;
-        
     }
 }
 ```
