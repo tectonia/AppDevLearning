@@ -50,31 +50,31 @@ public static async Task<IActionResult> Run(HttpRequestMessage req, ILogger log)
                 case "MAV":
                     wrapperName = "CreateCourse";
                     topicName = "CREATECOURSE";
-                    mapName = "Sits.CreateCourseToCanonical.Course";
+                    mapName = "Sits.CreateCourseToCanonical.Course.xslt";
                     break;
 
                 case "SMO":
                     wrapperName = "EnrolUserCourse";
                     topicName = "ENROLUSERCOURSE";
-                    mapName = "Sits.EnrolUserCourseToCanonical.Course";
+                    mapName = "Sits.EnrolUserCourseToCanonical.Course.xslt";
                     break;
 
                 case "CRS":
                     wrapperName = "CreateGroup";
                     topicName = "CREATEGROUP";
-                    mapName = "Sits.CreateGroupToCanonical.Group";
+                    mapName = "Sits.CreateGroupToCanonical.Group.xslt";
                     break;
 
                 case "YPS":
                     wrapperName = "CreateTerm";
                     topicName = "CREATETERM";
-                    mapName = "Sits.CreateTermToCanonical.Term";
+                    mapName = "Sits.CreateTermToCanonical.Term.xslt";
                     break;
 
                 case "SCE":
                     wrapperName = "CreateUser";
                     topicName = "CREATEUSER";
-                    mapName = "Sits.CreateUserToCanonical.User";
+                    mapName = "Sits.CreateUserToCanonical.User.xslt";
                     break;
 
                 default:
@@ -88,7 +88,7 @@ public static async Task<IActionResult> Run(HttpRequestMessage req, ILogger log)
                 case "PRS":
                     wrapperName = "CreateStaff";
                     topicName = "CREATESTAFF";
-                    mapName = "Sits.CreateStaffToCanonical.User";
+                    mapName = "Sits.CreateStaffToCanonical.User.xslt";
                     break;
 
                 default:
@@ -102,31 +102,31 @@ public static async Task<IActionResult> Run(HttpRequestMessage req, ILogger log)
                 case "STU":
                     wrapperName = "EditUser";
                     topicName = "EDITUSER";
-                    mapName = "Sits.EditUserToCanonical.User";
+                    mapName = "Sits.EditUserToCanonical.User.xslt";
                     break;
                 
                 case "MAV":
                     wrapperName = "CreateCourse";
                     topicName = "EDITCOURSE";
-                    mapName = "Sits.CreateCourseToCanonical.Course";
+                    mapName = "Sits.CreateCourseToCanonical.Course.xslt";
                     break;
 
                 case "YPS":
                     wrapperName = "CreateTerm";
                     topicName = "EDITTERM";
-                    mapName = "Sits.CreateTermToCanonical.Term";
+                    mapName = "Sits.CreateTermToCanonical.Term.xslt";
                     break;
                 
                 case "CRS":
                     wrapperName = "CreateGroup";
                     topicName = "CREATEGROUP";
-                    mapName = "Sits.CreateGroupToCanonical.Group";
+                    mapName = "Sits.CreateGroupToCanonical.Group.xslt";
                     break;
 
                 case "SCE":
                     wrapperName = "CreateUser";
                     topicName = "EDITCOURSEENROLLMENT";
-                    mapName = "Sits.CreateUserToCanonical.User";	
+                    mapName = "Sits.CreateUserToCanonical.User.xslt";	
                     break;
 
                 default:
@@ -137,7 +137,7 @@ public static async Task<IActionResult> Run(HttpRequestMessage req, ILogger log)
         default:
         wrapperName = "CreateUser23";
         topicName = "EDITCOURSEENROLLMENT23";
-        mapName = "Sits.CreateUserToCanonical.User23";	
+        mapName = "Sits.CreateUserToCanonical.User23.xslt";	
             break;
     }
     
