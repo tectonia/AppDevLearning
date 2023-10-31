@@ -24,15 +24,21 @@
     ```
 1. From here you can run the following command, which will create the Service bus namespace, topics and subscriptions. 
     ```
-    az deployment group create --resource-group <rg name> --template-file servicebus.bicep --parameters servicebus.bicepparam  
+    az deployment group create --resource-group [YOUR-RESOURCE-GROUP] --template-file servicebus.bicep --parameters servicebus.bicepparam  
     ```
+      > **Note** 
+      > Replace **[YOUR-RESOURCE-GROUP]** with the resource group name you created at the beginning from the lab.
+      
 1. Once the command is succesful, you can navigate to the Azure Portal, and check in the resource group that a new service bus namespace has been created, and that it has the topics and subscriptions.
 
 # Step 2 - Create Azure Functions
 1. Using the same Terminal window, you can run another cli command as shown below which will create the Azure function app.
     ```
-    az deployment group create --resource-group <rg name> --parameters functions.bicepparam
+    az deployment group create --resource-group [YOUR-RESOURCE-GROUP] --template-file functions.bicep --parameters functions.bicepparam
     ```
+      > **Note** 
+      > Replace **[YOUR-RESOURCE-GROUP]** with the resource group name you created at the beginning from the lab.
+      
 1. Navigate to the Azure Portal, and check that Function App resource has been created for you.
 
 1. Within this function app, we will create 2 Azure Functions within this Function App, which we will call as 1) MessageType and 2) FormatJSONPayload
