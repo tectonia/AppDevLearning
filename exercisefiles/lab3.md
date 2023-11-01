@@ -285,10 +285,12 @@ Code view of this Format JSON action
 ![Resource Group](images/la29.png)
 
 1. Make sure you are using a new connection string for this Function call, as you want to call the FormatJsonPayload. At the bottom of the shape, you can see "change connection" - click on that
+
+![Resource Group](images/connformatjson.png)
    
 ![Resource Group](images/la30.png)
 1. Time to add the next action in our workflow, which will be to send the message to Service Bus
-1. You need to create a connection string to the service bus. To get the connection string for the service bus, refer the screen shot which states Serice Bus connection string.
+2. You need to create a connection string to the service bus. To get the connection string for the service bus, refer the screen shot which states Serice Bus connection string.
 * 
 ![Resource Group](images/la32.png)
 ![Resource Group](images/la33.png)
