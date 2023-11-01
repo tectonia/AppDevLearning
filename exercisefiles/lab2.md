@@ -33,17 +33,21 @@ Steps:
 3. Choose "Create" then "Web App"
 ![alt text](./images/portal-web-app-create.png "create web app")
    
-4. You should then choose some suitable values for the web app. The name must be unique. 
+4. You should then choose some suitable values for the web app.
 ![alt text](./images/portal-web-app-create-options.png "web app create options")
 
-Things to think about:
-* It's name
-* Resource Group
-* Region
-* Service plan - Windows or Linux and SKU
-* Runtime
+* Resource Group - hit "Create new" and name it "app-dev-rg"
+* It's name needs to be globally unique, perhaps use your initials in the name - it will tick green if unique
+* Choose "Code"
+* Runtime stack ".NET 7 (STS)
+* Operating System "Linux"
+* Region "West Europe"
+* Linux plan - this should already have a new name (you could  hit "create new" and then type "my-service-plan"
+* Pricing plan - this should be "Basic B1"
 
-5. Hit the "Create" button and then wait a few minutes.
+You should not need to set values on other tabs.
+
+5. Hit "Create" and wait a minute or two
 
 You should now have a web application in the portal. This is now a public-facing live web site with the URL https://YOUR_WEB_APP_NAME.azurewebsites.net.
 
