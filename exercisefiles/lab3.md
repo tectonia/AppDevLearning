@@ -145,9 +145,9 @@ test
 
 1. Let's pass the 2 header values which are part of the incoming message, called messagetype and operation. These 2 headers will determine what type of message we are receving, and we will pass these 2 header values to the MessageType function.
   
-![Resource Group](images/la20.png)
-![Resource Group](images/la21.png)
-![Resource Group](images/la22.png)
+    ![Resource Group](images/la20.png)
+    ![Resource Group](images/la21.png)
+    ![Resource Group](images/la22.png)
 
 1. Lets add the next action to our workflow, which is a compose Action - this is to wrap the incoming json message with a overall root node. This is needed, as we will be converting this json message into xml in the following steps - and xml conversion will expect a overall root node. The exact name of the root node to be wrapped will be returned by the Return Message Type
     
@@ -184,21 +184,21 @@ test
  
     ![Resource Group](images/la32.png)
     ![Resource Group](images/la33.png)
-![Resource Group](images/la28.png)
-1. We will dynamically use a map based on the incoming message, as determined by the returnmessagetype. 
-![Resource Group](images/mapname.png)
+    ![Resource Group](images/la28.png)
+    1. We will dynamically use a map based on the incoming message, as determined by the returnmessagetype. 
+    ![Resource Group](images/mapname.png)
 1. Time to add the next action, which is again calling the second function which we created called FormatJsonPayload. This function will take the incoming json, and formats, indents and sends the message back. 
 
-![Resource Group](images/la29.png)
+    ![Resource Group](images/la29.png)
 
 1. Make sure you are using a new connection string for this Function call, as you want to call the FormatJsonPayload. At the bottom of the shape, you can see "change connection" - click on that
    
-![Resource Group](images/la30.png)
+    ![Resource Group](images/la30.png)
 1. Time to add the next action in our workflow, which will be to send the message to Service Bus
 1. You need to create a connection string to the service bus. To get the connection string for the service bus, refer the screen shot which states Serice Bus connection string.
-* 
-![Resource Group](images/la32.png)
-![Resource Group](images/la33.png)
+ 
+    ![Resource Group](images/la32.png)
+    ![Resource Group](images/la33.png)
 
    **Service Bus Connecting String**
 ![Resource Group](images/sbconnectinnstring.png)
