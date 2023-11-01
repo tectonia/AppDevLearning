@@ -33,17 +33,22 @@ Steps:
 3. Choose "Create" then "Web App"
 ![alt text](./images/portal-web-app-create.png "create web app")
    
-4. You should then choose some suitable values for the web app. The name must be unique. 
+4. You should then choose some suitable values for the web app.
+
+* Resource Group - hit "Create new" and name it "app-dev-rg"
+* It's name needs to be globally unique, perhaps use your initials in the name - it will tick green if unique
+* Choose "Code"
+* Runtime stack ".NET 7 (STS)
+* Operating System "Linux"
+* Region "West Europe"
+* Linux plan - this should already have a new name (you could  hit "create new" and then type "my-service-plan"
+* Pricing plan - this should be "Basic B1"
+
 ![alt text](./images/portal-web-app-create-options.png "web app create options")
 
-Things to think about:
-* It's name
-* Resource Group
-* Region
-* Service plan - Windows or Linux and SKU
-* Runtime
+You should not need to set values on other tabs.
 
-5. Hit the "Create" button and then wait a few minutes.
+5. Hit "Create" and wait a minute or two
 
 You should now have a web application in the portal. This is now a public-facing live web site with the URL https://YOUR_WEB_APP_NAME.azurewebsites.net.
 
@@ -72,6 +77,12 @@ Once logged on, pick your Azure subscription - if there is more than one in the 
 Open the "App Services" one with the ">" arrow:
 
 ![alt text](./images/vscode-app-service-list.png "App Services in VS Code")
+
+In the list you should see the name of the web app you created on the previous step - the one that needs to be globally unique.
+
+Sometimes it can take a few minutes to arrive into this list. If you right-click "App Services", there is a "Refresh" item in the pop-up menu. Try that.
+
+You can only move to the next step if your web app appears. So, relax and wait a few minutes.
 
 You may need to install an extension onto the web app in order to allow deployments. So, if you see
 
