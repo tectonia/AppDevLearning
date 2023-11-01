@@ -300,6 +300,7 @@ Code view of this Format JSON action
 ![Resource Group](images/la37.png)
 Final step is to add the Response as shown below. 
 ![Resource Group](images/la39.png)
+![Resource Group](images/lsreponse.png)
 
 # Step 4 - Send Request from Postman
 
@@ -310,3 +311,14 @@ We will use postman to mimic the student enrolled in SITS and a request coming i
 I have created sample files for you to test - Integrationworkshop/testfiles.
 
 Using postman you can start creating requests to test the logic app. 
+
+Get the Logic App URL from the overview page of the workflow. 
+
+Send a POST request, with the payloads which are provided for you. Pass the 2 header values - messagetype and operation. 
+
+![Resource Group](images/postman1.png)
+![Resource Group](images/postman2.png)
+
+Response:
+
+![Resource Group](images/postman3.png)
