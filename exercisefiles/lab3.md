@@ -102,7 +102,7 @@ Next step is to create a logic app. This is where we will be writing the integra
     ![Resource Group](images/la8.png) 
     ![Resource Group](images/la10.png)
 
-1. Now that the logic app is created, which like function app, is a hihg level construct under which we can create multiple workflows (just like how you can create multiple functions within a function app)
+1. Now that the logic app is created, which like function app, is a high level construct under which we can create multiple workflows (just like how you can create multiple functions within a function app)
 
 1. We will be using XSLT mapping in our workshop, and these XSLT files are precreated for you. You can find them under integrationworkshop/xsltmapping folder in this repo. 
 
