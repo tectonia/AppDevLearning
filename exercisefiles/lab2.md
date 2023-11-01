@@ -34,7 +34,6 @@ Steps:
 ![alt text](./images/portal-web-app-create.png "create web app")
    
 4. You should then choose some suitable values for the web app.
-![alt text](./images/portal-web-app-create-options.png "web app create options")
 
 * Resource Group - hit "Create new" and name it "app-dev-rg"
 * It's name needs to be globally unique, perhaps use your initials in the name - it will tick green if unique
@@ -44,6 +43,8 @@ Steps:
 * Region "West Europe"
 * Linux plan - this should already have a new name (you could  hit "create new" and then type "my-service-plan"
 * Pricing plan - this should be "Basic B1"
+
+![alt text](./images/portal-web-app-create-options.png "web app create options")
 
 You should not need to set values on other tabs.
 
