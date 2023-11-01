@@ -88,7 +88,8 @@
 
 1. Start creating a logic apps resource under the same resource group which we have been using
 1. The following few screen shots should help you create a logic app
-  
+   
+ 
     ![Resource Group](images/logicapp1.png) 
     ![Resource Group](images/la2.png) 
     ![Resource Group](images/la3.png) 
@@ -102,15 +103,16 @@
     ![Resource Group](images/la8.png) 
     ![Resource Group](images/la10.png)
 
+
 1. Now that the logic app is created, which like function app, is a hihg level construct under which we can create multiple workflows (just like how you can create multiple functions within a function app)
 
-1. We will be using XSLT mapping in our workshop, and these XSLT files are precreated for you. You can find them under integrationworkshop/xsltmapping folder in this repo. 
+2. We will be using XSLT mapping in our workshop, and these XSLT files are precreated for you. You can find them under integrationworkshop/xsltmapping folder in this repo. 
 
-1. As shown below, please upload the 4 xslt files to maps tab as shown below. We will use these xslt maps when defining the integration in the next steps.
+3. As shown below, please upload the 4 xslt files to maps tab as shown below. We will use these xslt maps when defining the integration in the next steps.
   
     ![Resource Group](images/uploadmaps.png)
    
-1. Let us now create a new workflow under the logic app resource you have created. The following screen shots will help you in this process. 
+4. Let us now create a new workflow under the logic app resource you have created. The following screen shots will help you in this process. 
 
 
     ![Resource Group](images/la11.png)
@@ -135,12 +137,12 @@
     ![Resource Group](images/la17.png)
     ![Resource Group](images/la18.png)
 
-    test
+    
     ![Resource Group](images/la19.png)
     ![Resource Group](images/la20.png)
     ![Resource Group](images/la21.png)
     ![Resource Group](images/la22.png)
-test
+
 ![Resource Group](images/la19.png)
 
 1. Let's pass the 2 header values which are part of the incoming message, called messagetype and operation. These 2 headers will determine what type of message we are receving, and we will pass these 2 header values to the MessageType function.
