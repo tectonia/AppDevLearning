@@ -15,6 +15,9 @@
 		"ghcr.io/devcontainers/features/docker-in-docker:1": {
 			"version": "latest"
 		},
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"version": "latest"
+		},
 		"ghcr.io/devcontainers/features/python:1": {
 			"version": "latest"
 		}
@@ -31,6 +34,7 @@
 				"ms-dotnettools.csdevkit",
 				"ms-python.python",
 				"ms-python.vscode-pylance",
+				"ms-vscode.azurecli",
 				"ms-vscode.vscode-node-azure-pack",
 				"ms-azuretools.vscode-azureappservice"				
 			]
