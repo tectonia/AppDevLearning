@@ -78,6 +78,12 @@ Open the "App Services" one with the ">" arrow:
 
 ![alt text](./images/vscode-app-service-list.png "App Services in VS Code")
 
+In the list you should see the name of the web app you created on the previous step - the one that needs to be globally unique.
+
+Sometimes it can take a few minutes to arrive into this list. If you right-click "App Services", there is a "Refresh" item in the pop-up menu. Try that.
+
+You can only move to the next step if your web app appears. So, relax and wait a few minutes.
+
 You may need to install an extension onto the web app in order to allow deployments. So, if you see
 
 ![alt text](./images/app-service-install-extension.png "App Service Extension in VS Code")
