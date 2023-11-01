@@ -295,9 +295,10 @@ Code view of this Format JSON action
 
    **Service Bus Connecting String**
 ![Resource Group](images/sbconnectinnstring.png)
-![Resource Group](images/la36.png)
+
 ![Resource Group](images/la38.png)
 ![Resource Group](images/la37.png)
+Final step is to add the Response as shown below. 
 ![Resource Group](images/la39.png)
 
 # Step 4 - Send Request from Postman
