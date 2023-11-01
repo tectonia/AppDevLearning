@@ -135,22 +135,19 @@
     ![Resource Group](images/la17.png)
     ![Resource Group](images/la18.png)
 
-<<<<<<< Updated upstream
     test
     ![Resource Group](images/la19.png)
     ![Resource Group](images/la20.png)
     ![Resource Group](images/la21.png)
     ![Resource Group](images/la22.png)
-=======
 test
 ![Resource Group](images/la19.png)
 
-* Let's pass the 2 header values which are part of the incoming message, called messagetype and operation. These 2 headers will determine what type of message we are receving, and we will pass these 2 header values to the MessageType function.
-* 
+1. Let's pass the 2 header values which are part of the incoming message, called messagetype and operation. These 2 headers will determine what type of message we are receving, and we will pass these 2 header values to the MessageType function.
+  
 ![Resource Group](images/la20.png)
 ![Resource Group](images/la21.png)
 ![Resource Group](images/la22.png)
->>>>>>> Stashed changes
 
 1. Lets add the next action to our workflow, which is a compose Action - this is to wrap the incoming json message with a overall root node. This is needed, as we will be converting this json message into xml in the following steps - and xml conversion will expect a overall root node. The exact name of the root node to be wrapped will be returned by the Return Message Type
     
@@ -158,9 +155,9 @@ test
 
     ![Resource Group](images/la24.png)
 
-1. Let's rename this action as **Wrap in root node**
+2. Let's rename this action as **Wrap in root node**
     ![Resource Group](images/la25.png)
-1. For the inputs, we need to create a json as shown below. so we start with 2 curly brackets, and then use the wrapper element and the actual body of the message. 
+3. For the inputs, we need to create a json as shown below. so we start with 2 curly brackets, and then use the wrapper element and the actual body of the message. 
     ```json
     {
       "name":"value"
@@ -168,13 +165,12 @@ test
     ```
     ![Resource Group](images/la26.png)
     ![Resource Group](images/la27.png)
-1. Let's add the next shape into our workflow, which is to Transform the XML message from one format to another. We will use an action called Transform XML as shown below.
+4. Let's add the next shape into our workflow, which is to Transform the XML message from one format to another. We will use an action called Transform XML as shown below.
   
     ![Resource Group](images/xmlaction.png)
 
-1. Because Transform XML works with xml message, we need to convert the json file which we have to xml. Logic apps have built-in functions to do such conversions, one of them is called xml(), which will convert the object passed into XML. We will use this function to convert.
+5. Because Transform XML works with xml message, we need to convert the json file which we have to xml. Logic apps have built-in functions to do such conversions, one of them is called xml(), which will convert the object passed into XML. We will use this function to convert.
   
-<<<<<<< Updated upstream
     ![Resource Group](images/la28.png)
 1. We will dynamically use a map based on the incoming message, as determined by the returnmessagetype. Put an .xslt extension at the end of the file
     ![Resource Group](images/mapname.png)
@@ -188,7 +184,6 @@ test
  
     ![Resource Group](images/la32.png)
     ![Resource Group](images/la33.png)
-=======
 ![Resource Group](images/la28.png)
 * We will dynamically use a map based on the incoming message, as determined by the returnmessagetype. 
 ![Resource Group](images/mapname.png)
@@ -202,7 +197,6 @@ test
 * 
 ![Resource Group](images/la32.png)
 ![Resource Group](images/la33.png)
->>>>>>> Stashed changes
 
    **Service Bus Connecting String**
 
