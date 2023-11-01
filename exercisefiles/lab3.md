@@ -251,6 +251,8 @@ Code view of this Transform XML action
  
   ![Resource Group](images/la29.png)
 3. Make sure you are using a new connection string for this Function call, as you want to call the FormatJsonPayload. At the bottom of the shape, you can see "change connection" - click on that
+
+![Resource Group](images/connformatjson.png)
     ![Resource Group](images/la30.png)
 
 ```json
@@ -272,32 +274,17 @@ Code view of this Format JSON action
 }
 ```
 
-4. Time to add the next action in our workflow, which will be to send the message to Service Bus
-5. You need to create a connection string to the service bus. To get the connection string for the service bus, refer the screen shot which states Serice Bus connection string.
+1. Time to add the next action in our workflow, which will be to send the message to Service Bus
+2. You need to create a connection string to the service bus. To get the connection string for the service bus, refer the screen shot which states Serice Bus connection string.
  
     ![Resource Group](images/la32.png)
     ![Resource Group](images/la33.png)
-![Resource Group](images/la28.png)
-1. We will dynamically use a map based on the incoming message, as determined by the returnmessagetype. 
-![Resource Group](images/mapname.png)
-1. Time to add the next action, which is again calling the second function which we created called FormatJsonPayload. This function will take the incoming json, and formats, indents and sends the message back. 
 
-![Resource Group](images/la29.png)
 
-1. Make sure you are using a new connection string for this Function call, as you want to call the FormatJsonPayload. At the bottom of the shape, you can see "change connection" - click on that
-
-![Resource Group](images/connformatjson.png)
-   
-![Resource Group](images/la30.png)
-1. Time to add the next action in our workflow, which will be to send the message to Service Bus
-2. You need to create a connection string to the service bus. To get the connection string for the service bus, refer the screen shot which states Serice Bus connection string.
-* 
-![Resource Group](images/la32.png)
-![Resource Group](images/la33.png)
 
    **Service Bus Connecting String**
 ![Resource Group](images/sbconnectinnstring.png)
-
+![Resource Group](images/lasbtopic.png)
 ![Resource Group](images/la38.png)
 ![Resource Group](images/la37.png)
 Final step is to add the Response as shown below. 
