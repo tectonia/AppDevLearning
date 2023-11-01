@@ -82,9 +82,9 @@
 
 # Step 3 - Create Logic App
 
-1. Next step is to create a logic app. This is where we will be writing the integration steps, using a visual tool called logic apps designer. At the end of step 3, you should see a logic app which will look like this. 
+Next step is to create a logic app. This is where we will be writing the integration steps, using a visual tool called logic apps designer. At the end of step 3, you should see a logic app which will look like this. 
   
-    ![Resource Group](images/finishedlogicapp.png)
+   ![Resource Group](images/finishedlogicapp.png)
 
 1. Start creating a logic apps resource under the same resource group which we have been using
 1. The following few screen shots should help you create a logic app
