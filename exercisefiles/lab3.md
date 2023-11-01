@@ -225,7 +225,7 @@ Code view for the Return Message Type action
 5. Because Transform XML works with xml message, we need to convert the json file which we have to xml. Logic apps have built-in functions to do such conversions, one of them is called xml(), which will convert the object passed into XML. We will use this function to convert.
   
     ![Resource Group](images/la28.png)
-1. We will dynamically use a map based on the incoming message, as determined by the returnmessagetype. 
+1. We will dynamically use a map based on the incoming message, as determined by the returnmessagetype.Click on the Map Name text box, and provide the map name from the body of the Return message type as shown below 
   ![Resource Group](images/mapname.png)
 ```json
 Code view of this Transform XML action
@@ -254,7 +254,7 @@ Code view of this Transform XML action
     ![Resource Group](images/la30.png)
 
 ```json
-Code view of this Format JSON Payload action
+Code view of this Format JSON action
 {
   "type": "Function",
   "inputs": {
@@ -277,12 +277,12 @@ Code view of this Format JSON Payload action
  
     ![Resource Group](images/la32.png)
     ![Resource Group](images/la33.png)
-
+![Resource Group](images/la28.png)
 1. We will dynamically use a map based on the incoming message, as determined by the returnmessagetype. 
 ![Resource Group](images/mapname.png)
 1. Time to add the next action, which is again calling the second function which we created called FormatJsonPayload. This function will take the incoming json, and formats, indents and sends the message back. 
 
-
+![Resource Group](images/la29.png)
 
 1. Make sure you are using a new connection string for this Function call, as you want to call the FormatJsonPayload. At the bottom of the shape, you can see "change connection" - click on that
    
