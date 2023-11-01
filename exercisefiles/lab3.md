@@ -287,9 +287,50 @@ Code view of this Format JSON action
 ![Resource Group](images/lasbtopic.png)
 ![Resource Group](images/la38.png)
 ![Resource Group](images/la37.png)
+```json
+Code view of this Service Bus action
+{
+  "type": "ServiceProvider",
+  "inputs": {
+    "parameters": {
+      "entityName": "@body('Get_MessageType')['topic']",
+      "message": {
+        "contentData": "@body('Format_Json_Payload')"
+      }
+    },
+    "serviceProviderConfiguration": {
+      "connectionName": "serviceBus",
+      "operationId": "sendMessage",
+      "serviceProviderId": "/serviceProviders/serviceBus"
+    }
+  },
+  "runAfter": {
+    "Format_Json_Payload": [
+      "SUCCEEDED"
+    ]
+  }
+}
+```
 Final step is to add the Response as shown below. 
 ![Resource Group](images/la39.png)
 ![Resource Group](images/lsreponse.png)
+
+```json
+Code view of this Response action
+{
+  "type": "Response",
+  "kind": "Http",
+  "inputs": {
+    "statusCode": 200,
+    "body": "@body('Format_Json_Payload')"
+  },
+  "runAfter": {
+    "Send_to_Service_Bus_Topic": [
+      "SUCCEEDED"
+    ]
+  }
+}
+```
 
 # Step 4 - Send Request from Postman
 
