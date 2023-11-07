@@ -1,7 +1,16 @@
 # DevOps lab
 ### **NOTE!** 
 ### If you already have a .NET app from last week's session - feel free to use that. If not - feel free to clone this [python flask app](https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart).
-## Create GitHub repo
+## What is DevOps?
+The purpose of this lab is to familiarise you with the basics of using git and GitHub (don't know the difference? [click here!](https://www.geeksforgeeks.org/difference-between-git-and-github/)) and the software development cycle in an agile team. 
+We'll cover the following topics:
+- GitHub repositories
+- Commits, branching and pull requests
+- Continous integration and deployment with GitHub Actions
+- GitHub Copilot
+
+**Let's get started!**
+## Create a GitHub repo
 1. Go to your GitHub profile and create a new repo:
    
 ![image](https://github.com/tectonia/AppDevLearning/assets/61530975/30241db8-c067-4578-b059-df8a1b5a1fcb)
