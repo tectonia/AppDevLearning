@@ -1,5 +1,7 @@
 # DevOps lab
-### Create GitHub repo
+### **NOTE!** 
+### If you already have a .NET app from last week's session - feel free to use that. If not - feel free to clone this [python flask app](https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart).
+## Create GitHub repo
 1. Go to your GitHub profile and create a new repo:
    
 ![image](https://github.com/tectonia/AppDevLearning/assets/61530975/30241db8-c067-4578-b059-df8a1b5a1fcb)
@@ -19,7 +21,7 @@ git branch -M main
 git push -u origin main
  ```
 5. Check that your code is in your repo!
-### Commits, branching and pull requests
+## Commits, branching and pull requests
 6. Create a new branch:
 ```
 git switch -c dev
@@ -44,7 +46,7 @@ git push --set-upstream origin dev
 ![image](https://github.com/tectonia/AppDevLearning/assets/61530975/c8d05bb1-cbe1-4828-b8e0-b7af0955f0af)
 12. Merge your pull request and delete the branch. 
 
-### Setup a GitHub Actions workflow for App Service deployment
+## Setup a GitHub Actions workflow for App Service deployment
 13. Go to the Azure Portal and navigate to the previously deployed App Service's configuration under settings and enable basic authentication:
 
 ![image](https://github.com/tectonia/AppDevLearning/assets/61530975/00a9f8a7-754f-400a-b57e-21a5fd0a851d)
@@ -60,5 +62,5 @@ git push --set-upstream origin dev
 ![image](https://github.com/tectonia/AppDevLearning/assets/61530975/9a9869b0-fdec-4b74-ae30-46de8ed91672)
 
 
-### GitHub Copilot (with Python)
+## GitHub Copilot (with Python)
 17. Following [this](https://learn.microsoft.com/en-us/training/modules/introduction-copilot-python/3-exercise-setup) and [this](https://learn.microsoft.com/en-us/training/modules/introduction-copilot-python/5-exercise-python-web-api) exercises. Have fun!
