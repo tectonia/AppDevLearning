@@ -63,4 +63,4 @@ git push --set-upstream origin dev
 
 
 ## GitHub Copilot (with Python)
-17. Following [this](https://learn.microsoft.com/en-us/training/modules/introduction-copilot-python/3-exercise-setup) and [this](https://learn.microsoft.com/en-us/training/modules/introduction-copilot-python/5-exercise-python-web-api) exercises. Have fun!
+You can use [this setup guide](https://learn.microsoft.com/en-us/training/modules/introduction-copilot-python/3-exercise-setup) and [this exercise](https://learn.microsoft.com/en-us/training/modules/introduction-copilot-python/5-exercise-python-web-api). Otherwise, try to change your existing app and add some functionality. Have fun!
