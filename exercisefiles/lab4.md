@@ -56,6 +56,16 @@ git push --set-upstream origin dev
 12. Merge your pull request and delete the branch. 
 
 ## Setup a GitHub Actions workflow for App Service deployment
+(Optional) If you don't have app service, go to portal.azure.com and create one:
+
+![image](https://github.com/tectonia/AppDevLearning/assets/61530975/6df84f21-d75c-4040-aafe-f4d05bb1fc52)
+
+Make sure you choose Python 3.9 on the creation page and fill in the required fields:
+
+![image](https://github.com/tectonia/AppDevLearning/assets/61530975/f87c2717-6c68-46c0-9780-9eccf3457a4d)
+
+
+
 13. Go to the Azure Portal and navigate to the previously deployed App Service's configuration under settings and enable basic authentication:
 
 ![image](https://github.com/tectonia/AppDevLearning/assets/61530975/00a9f8a7-754f-400a-b57e-21a5fd0a851d)
