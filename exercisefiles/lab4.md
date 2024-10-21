@@ -138,10 +138,13 @@ It's particularly beneficial because it ensures that your application is always 
 
 Additionally, it provides a consistent and repeatable deployment process, which is crucial for maintaining the reliability and stability of your web application. Overall, it's a powerful method to manage and deploy web applications efficiently.
 
-### 1. Create an App Service Web App
+### Create an App Service Web App
 1. Open up the Azure Portal
 
 2. Search for or click on App Service (or Web App via search)
+
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-0.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-0.5.png)
 
 3. Create a new Web App 
     1. **Resource Group**: Create a new one or add to one you are already using
@@ -150,32 +153,43 @@ Additionally, it provides a consistent and repeatable deployment process, which 
     4. **Region**: UK South
     5. **Pricing plan**: Free F1
     6. (Everything else can stay default)
+  
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-1.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-2.png)
 
 
-### 2. Create a User Assigned Managed Identity
+### Create a User Assigned Managed Identity
 1. Click Review + Create
     1. Navigate to the resource group you created your app in
     2. Click + Create > Search “User assigned managed identity” > Click Create
     3. Create a User Assigned Managed Identity
         1. **Name**: (your app’s name)-identity
         2. Review + Create
+      
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-3.png)
 
-### 3.	Deploy your App
+### Deploy your App
 1.	Navigate back to your App Service Web App
 2.	Under Settings on the left hand side, click Identity
     1.	Navigate to User Assigned and click Add User Assigned Managed Identity
     2.	Click your recently created identity and then click Add
+    
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-4.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-5.png)
 
    
 4.	Under Deployment, click Deployment Center
     1.	Fill out the following information:
-    2.	Source: GitHub
-    3.	Organisation: Your GitHub username
-    4.	Repository: The repository you created with your web app’s code
-    5.	Branch: main
-    6.	Authentication Type: User-assigned identity
-    7.	Identity: The identity you created earlier
+    2.	**Source**: GitHub
+    3.	**Organisation**: Your GitHub username
+    4.	**Repository**: The repository you created with your web app’s code
+    5.	**Branch**: main
+    6.	**Authentication Type**: User-assigned identity
+    7.	**Identity**: The identity you created earlier
     8.	Click Save
+  
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-6.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-7.png)
 
       
 5.	Go to your GitHub repository
@@ -183,6 +197,9 @@ Additionally, it provides a consistent and repeatable deployment process, which 
    2.	Watch your pipeline deploy your web app
    3.	If you get a green check, it has deployed correctly!
    4.	Check if it has been successful in the Deployment Center as well
+
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-8.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-9.png)
 
 
 ## GitHub Copilot (with Python)
