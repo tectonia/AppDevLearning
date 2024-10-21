@@ -10,7 +10,7 @@ We'll cover the following topics:
 - GitHub Copilot
 
 **Let's get started!**
-## How to clone the python flask app (if you already have a .NET web app, you can skip this)
+## How to clone the python flask app (if you already have a .NET web app, you can skip this :heavy_exclamation_mark:)
 ### :bulb: What does cloning a repository mean?
 
 Cloning a GitHub repository means creating a local copy of a project that exists on GitHub. It's like downloading the entire project, including all its files, commit history, and branches, to your computer so you can work on it independently. 
@@ -23,19 +23,25 @@ Cloning a GitHub repository means creating a local copy of a project that exists
 
 4. Click Terminal > New Terminal
 
-5. Navigate to Azure-Samples/msdocs-python-flask-webapp-quickstart in the terminal. This folder contains the sample application for the App Service Quickstart in Python using Flask.
+5. Navigate to : https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart
     1. Click the green button that says “Clone”
     2. Copy the web URL
 
-6. In the terminal enter this command:
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-10.png)
+
+6. In the terminal enter this command (without the brackets):
 ```
-git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart.git
+git clone [the link you copied]
  ```
+:bulb: The `git clone` command is used to create a copy of an existing Git repository. It’s one of the most commonly used Git commands because it’s the way you download a repository from a remote server to your local machine.
+
 7. Once it has added the code to your folder, run this command to navigate to the right folder:
  ```
 cd msdocs-python-flask-webapp-quickstart
  ```
+If you have cloned a different repo, replace "msdocs-python-flask-webapp-quickstart" with the relevant folder.
 
+:bulb: The `cd` command is a fundamental command used in the command line interface (CLI) of your operating system, and it’s not specific to Git. It stands for “change directory” and is used to navigate between directories (folders) in your file system.
 
 ## Create a GitHub repo
 1. Go to your GitHub profile and create a new repo:
@@ -69,6 +75,8 @@ git remote add origin https://github.com/<your-github-handle>/<name-of-your-gith
 git branch -M main
 git push -u origin main
  ```
+:heavy_exclamation_mark: If you're recieving an error when you try to add a remote origin and you are using the cloned web app, run `git remote remove origin` before adding your remote origin. Check this has been successful by running the `git remote -v`.
+
 :bulb: `git remote add origin https://github.com/<your-github-handle>/<name-of-your-github-repo>.git`: This command adds a remote repository (a version of your project hosted on GitHub) and names it ‘origin’. It’s like setting a bookmark to the URL of your GitHub repository so you can easily push your local changes to GitHub.
 
 :bulb: `git branch -M main`: This command renames the current branch to ‘main’.
@@ -96,11 +104,11 @@ git switch -c dev
 
 3. Commit changes and push your dev branch:
 ```
-git add MyWebApp/Pages/Index.cshtml
+git add <path/changedfile>
 git commit -m "Change Index page headline"
 git push --set-upstream origin dev
  ```
-:bulb: `git add MyWebApp/Pages/Index.cshtml`: This command stages the specific file located in the directory, preparing it to be included in the next commit. It's useful for when you want to commit changes to a particular file rather than all modified files. Change the command to be where you made your change.
+:bulb: `git add <path/changedfile>`: Edit <path/changedfile>, without brackets, to the unique path to the file you changed. This command stages the specific file located in the directory, preparing it to be included in the next commit. It's useful for when you want to commit changes to a particular file rather than all modified files. Change the command to be where you made your change.
 
 :bulb: `git commit -m "Change Index page headline"`: Just like earlier, this command creates a new commit with the staged changes and includes a message describing the changes. 
 
