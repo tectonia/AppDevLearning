@@ -5,7 +5,7 @@ Following the plan [here](https://learn.microsoft.com/en-us/azure/app-service/qu
 1. An Azure account with an active subscription.
 2. Visual Studio Code.
 3. The Azure Tools extension.
-4. The latest .NET 7.0 SDK.
+4. The latest .NET 8.0 SDK.
 
 ## Step One - understanding web apps
 Summarising from previous slide decks:
@@ -17,7 +17,11 @@ Summarising from previous slide decks:
 6. Deploying the web app and deploying its code are two separate things - each with their own lifecycle. Deploying the code must be after the web app and is usually done much more frequently.
 
 ## Step Two - verify your app can run locally
-This should be done in your local copy of Visual Studio Code and should be covered from the previous session. 
+Follow the below article to build a web app locally.
+
+[Build a web app with ASP.NET Core using Blazor](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/intro)
+
+This should be done in your local copy of Visual Studio 2022 and should be covered from the previous session. 
 Make sure your application is up and running locally.
 
 **This should be the only web app from step five of the previous session.**
@@ -38,9 +42,9 @@ Steps:
 * Resource Group - hit "Create new" and name it "app-dev-rg"
 * It's name needs to be globally unique, perhaps use your initials in the name - it will tick green if unique
 * Choose "Code"
-* Runtime stack ".NET 7 (STS)
+* Runtime stack ".NET 8 (LTS)"
 * Operating System "Linux"
-* Region "West Europe"
+* Region "UK South"
 * Linux plan - this should already have a new name (you could  hit "create new" and then type "my-service-plan"
 * Pricing plan - this should be "Basic B1"
 
@@ -50,7 +54,7 @@ You should not need to set values on other tabs.
 
 5. Hit "Create" and wait a minute or two
 
-You should now have a web application in the portal. This is now a public-facing live web site with the URL https://YOUR_WEB_APP_NAME.azurewebsites.net.
+You should now have a web application in the portal. This is now a public-facing live web site with the URL https://YOUR_WEB_APP_NAME-&lt;RandomHash&gt;.&lt;Region&gt;.azurewebsites.net with the unique default hostname preview option enabled.
 
 Try putting that in a browser session (with your web app name). You should see something like this:
 ![alt text](./images/empty-web-app-runnning.png "web app running before code")
@@ -98,7 +102,7 @@ Now you should be able to choose the web application you created in a previous s
 
 Now validate that the code has been successfully deployed by checking on your web app URL again. As a reminder, it is of the format:
 
-https://YOUR_WEB_APP_NAME.azurewebsites.net
+https://YOUR_WEB_APP_NAME-&lt;RandomHash&gt;.&lt;Region&gt;.azurewebsites.net
 
 ![alt text](./images/web-app-deployed.png "Deployed to web app")
 
@@ -111,11 +115,11 @@ So now you know what the code for an ASP.NET web application looks like and how 
 3. Go to the Azure Extension, find your web app again and then right-click and redeploy.
 4. Wait until completion and validate using the URL
 
-If you created a web app with **dotnet new webapp -o MyWebApp --no-https -f net7.0**, then you can change some of the text in **Index.cshtml**
-![alt text](./images/web-app-index.png "edit Index.cshtml")
+For example, you can change some of the text in **Home.razor**
+![alt text](./images/web-app-index.png "edit Home.razor")
 
 could be changed to:
-![alt text](./images/index-page-amended.png "edited Index.cshtml")
+![alt text](./images/index-page-amended.png "edited Home.razor")
 
 Don't forget to save the change (Ctrl-S). Then right-click the web app and "Deploy to web app" again.
 
@@ -128,26 +132,26 @@ What if there were concerns that mistakes could be made? How can I validate this
 ## Step Six - web app for containers
 Web apps can also run Docker containers. Here's how to deploy one.
 
-1. Choose web app for containers or Create the web app, but choose "Docker Container" Option:
+1. Choose web app for containers or Create the web app, but choose "Container" option:
 ![alt text](./images/app-service-choose-docker.png "App Services choose docker")
 
-3. Move to the Docker tab and set some values:
+2. Move to the Container tab and set some values:
 ![alt text](./images/app-service-container-settings.png "App Services container settings")
 
 The above settings are really important. You may observe that the password is redacted. We will supply that. If this is not correct, the app will not be able to pull the container image.
 
-ServerURL: https://jjacreg.azurecr.io
+ServerURL: https://awcwong.azurecr.io
 
-Username: jjacreg
+Username: awcwong
 
-Image: recipe:latest
+Image: nodeapp:latest
 
-Password: utNyqU0rPfT5av11ibd0tBV2/4IrQ8h57ykh+EnML1+ACRDOu5 - which is truncated by two characters. The team will let you know.
+Password: 78r/Z8AlLZLnYUCnS89ehtdNo3fmwUw4AQyhXTCgby+ACRALO - which is truncated by three characters. The team will let you know.
 
 3. Hit create and wait.
 
-4. Open the web app URL - you should see something like this
-![alt text](./images/app-service-container-recipe.png "Recipe bot")
+4. Open the web app URL - you should see something like this after a few minutes
+![alt text](./images/app-service-container-nodeapp.png "Node app")
 
 and have a go!
 
@@ -156,7 +160,7 @@ and have a go!
 
 The idea is that deployments will not be made to the main application - but to the staging slot. This will have a name of the form:
 
-https://YOUR_WEB_APP_NAME-YOUR-SLOT-NAME.azurewebsites.net.
+https://YOUR_WEB_APP_NAME-YOUR-SLOT-NAME-&lt;RandomHash&gt;.&lt;Region&gt;.azurewebsites.net.
 
 You can then test the application on this slot and when ready "slot swap". This is a feature of a web app that has a deployment slot, where the roles of the main and the staging slot get swapped.
 
@@ -168,9 +172,7 @@ The golden rule of such an approach is to only deploy to the staging slot.
 
 Try it out!
 
-** Deployment slots are only available on some app service SKUs. If this feature is not available, then change the SKU of the app service plan to a "standard" SKU e.g. S1.
-
-![alt text](./images/app-service-choose-docker.png "App Services choose docker")
+** Deployment slots are only available on some app service SKUs. If this feature is not available, then change the SKU of the app service plan to a "Premium" SKU e.g. P0V3.
 
 ## Further learning and labs
 Here is a list of useful destinations in our documentation for learning more about deploying apps on Azure.
