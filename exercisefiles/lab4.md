@@ -143,8 +143,8 @@ Additionally, it provides a consistent and repeatable deployment process, which 
 
 2. Search for or click on App Service (or Web App via search)
 
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-0.png)
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-0.5.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-0.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-0.5.png)
 
 3. Create a new Web App 
     1. **Resource Group**: Create a new one or add to one you are already using
@@ -154,8 +154,8 @@ Additionally, it provides a consistent and repeatable deployment process, which 
     5. **Pricing plan**: Free F1
     6. (Everything else can stay default)
   
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-1.png)
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-2.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-1.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-2.png)
 
 
 ### Create a User Assigned Managed Identity
@@ -166,7 +166,7 @@ Additionally, it provides a consistent and repeatable deployment process, which 
         1. **Name**: (your app’s name)-identity
         2. Review + Create
       
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-3.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-3.png)
 
 ### Deploy your App
 1.	Navigate back to your App Service Web App
@@ -174,8 +174,8 @@ Additionally, it provides a consistent and repeatable deployment process, which 
     1.	Navigate to User Assigned and click Add User Assigned Managed Identity
     2.	Click your recently created identity and then click Add
     
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-4.png)
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-5.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-4.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-5.png)
 
    
 4.	Under Deployment, click Deployment Center
@@ -188,8 +188,8 @@ Additionally, it provides a consistent and repeatable deployment process, which 
     7.	**Identity**: The identity you created earlier
     8.	Click Save
   
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-6.png)
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-7.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-6.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-7.png)
 
       
 5.	Go to your GitHub repository
@@ -198,8 +198,8 @@ Additionally, it provides a consistent and repeatable deployment process, which 
    3.	If you get a green check, it has deployed correctly!
    4.	Check if it has been successful in the Deployment Center as well
 
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-8.png)
-![image](https://github.com/tectonia/AppDevLearning/blob/sofiatrev-patch-1/exercisefiles/images/devops-9.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-8.png)
+![image](https://github.com/tectonia/AppDevLearning/blob/main/exercisefiles/images/devops-9.png)
 
 
 ## GitHub Copilot (with Python)
