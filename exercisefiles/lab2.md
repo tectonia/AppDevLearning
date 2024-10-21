@@ -19,10 +19,12 @@ Summarising from previous slide decks:
 ## Step Two - verify your app can run locally
 Follow the below article to build a web app locally.
 
-[Build a web app with ASP.NET Core using Blazor](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/intro)
+[Build your first web app with ASP.NET Core using Blazor](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/intro)
 
 This should be done in your local copy of Visual Studio 2022 and should be covered from the previous session. 
-Make sure your application is up and running locally.
+Make sure your application is up and running locally. If you do not have Visual Studio 2022 installed locally, you could follow the CLI version of the tutorial below instead which does not require Visual Studio 2022, and use Visual Studio Code to edit the code files.
+
+[Build your first web app with ASP.NET Core using Blazor](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-cli-tutorial/intro)
 
 **This should be the only web app from step five of the previous session.**
 
