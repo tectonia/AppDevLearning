@@ -1,6 +1,6 @@
 using 'servicebus.bicep'
 
-param namespaceName  = 'sb-eic-integration-pb2025'
+//param namespaceName  = 'sb-eic-integration-pb2025'
 
 param topicNameCreateStaff  = 'createstaff'
 param subscriptionNameCreateStaff  = 'canvascreatestaff'

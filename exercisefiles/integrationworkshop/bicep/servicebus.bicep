@@ -1,4 +1,5 @@
-param namespaceName string
+
+param namespaceName string = 'sbns${uniqueString(resourceGroup().id)}'
 param topicNameCreateStaff string
 param subscriptionNameCreateStaff string
 
